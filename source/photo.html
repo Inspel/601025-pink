@@ -8,21 +8,23 @@
 <header class="page-header">
   <nav class="page-header__navigation navigation">
     <div class="page-header__top-menu">
-      <img class="page-header__logo logo" src="#" alt="Логотип &quot;Pink&quot;">
+      <a class="page-header__link-main" href="index.html">
+        <img class="page-header__logo logo" src="#" alt="Логотип &quot;Pink&quot;">
+      </a>
       <button class="page-header__nav-btn burger-btn" type="button">Бургер</button>
     </div>
     <ul class="page-header__nav-list">
       <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="#">Главная</a>
+        <a class="page-header__nav-link" href="index.html">Главная</a>
       </li>
       <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="#">Фотографии</a>
+        <a class="page-header__nav-link active-page" href="#">Фотографии</a>
       </li>
       <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="#">Конкурс</a>
+        <a class="page-header__nav-link" href="form.html">Конкурс</a>
       </li>
       <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="#">HTML Academy</a>
+        <a class="page-header__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </li>
     </ul>
   </nav>
@@ -140,65 +142,70 @@
   </section>
   <section class="photo-content__upload upload">
     <h2 class="visually-hidden">Загрузи свое фото!</h2>
-    <img class="upload__photo" src="#">
-    <div class="upload__instruments instruments">
-      <ul class="instruments__list">
-        <li class="instruments__crop">
-          <button class="instruments__button--crop"></button>
-          <div class="instruments__slider slider">
-            <div class="slider__scale"></div>
-            <div class="slider__toggle"></div>
-          </div>
-        </li>
-        <li class="instruments__fill">
-          <button class="instruments__button--fill"></button>
-          <div class="instruments__slider slider">
-            <div class="slider__scale"></div>
-            <div class="slider__toggle"></div>
-          </div>
-        </li>
-        <li class="instruments__contrast">
-          <button class="instruments__button--contrast"></button>
-          <div class="instruments__slider slider">
-            <div class="slider__scale"></div>
-            <div class="slider__toggle"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="upload__btns-wrapper">
-      <button class="upload__btn-post btn" type="submit">Запостить</button>
-      <button class="upload__btn-cancel btn" type="reset">Отмена</button>
-    </div>
-  </section>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <img class="page-footer__logo logo" src="#" alt="Логотип &quot;Pink&quot;">
-      <div class="page-footer__social-wrapper">
-        <ul class="page-footer__social social-block">
-          <li class="social-block__item">
-            <a class="social-block__btn--twitter" href="#">
-              <span class="visually-hidden">twitter</span>
-            </a>
+    <form class="upload__form" action="photo.html" method="post">
+      <label class="upload__input-container" for="upload-photo">
+        <input class="visually-hidden" type="file" id="upload-photo">
+        <img class="upload__photo" src="#">
+      </label>
+      <div class="upload__instruments instruments">
+        <ul class="instruments__list">
+          <li class="instruments__crop">
+            <button class="instruments__button--crop"></button>
+            <div class="instruments__slider slider">
+              <div class="slider__scale"></div>
+              <div class="slider__toggle"></div>
+            </div>
           </li>
-          <li>
-            <a class="social-block__btn--facebook" href="#">
-              <span class="visually-hidden">facebook</span>
-            </a>
+          <li class="instruments__fill">
+            <button class="instruments__button--fill"></button>
+            <div class="instruments__slider slider">
+              <div class="slider__scale"></div>
+              <div class="slider__toggle"></div>
+            </div>
           </li>
-          <li>
-            <a class="social-block__btn--youtube" href="#">
-              <span class="visually-hidden">youtube</span>
-            </a>
+          <li class="instruments__contrast">
+            <button class="instruments__button--contrast"></button>
+            <div class="instruments__slider slider-photo">
+              <div class="slider-photo__scale"></div>
+              <div class="slider-photo__toggle"></div>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTMLacademy</a>
+      <div class="upload__btns-wrapper">
+        <button class="upload__btn-post btn" type="submit">Запостить</button>
+        <button class="upload__btn-cancel btn" type="reset">Отмена</button>
       </div>
-    </div>
-  </footer>
+    </form>
+  </section>
 </main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <img class="page-footer__logo logo" src="#" alt="Логотип &quot;Pink&quot;">
+    <div class="page-footer__social-wrapper">
+      <ul class="page-footer__social social-block">
+        <li class="social-block__item">
+          <a class="social-block__btn--twitter" href="https://twitter.com">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-block__btn--facebook" href="https://www.facebook.com">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-block__btn--youtube" href="https://www.youtube.com">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
