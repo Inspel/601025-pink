@@ -4,9 +4,68 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+  <body class="body">
+    <header class="main-header">
+      <nav class="main-header__navigation navigation">
+        <img class="main-header__logo logo">
+        <button class="main-header__nav-btn burger-btn">Бургер</button>
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">Главная</li>
+          <li class="main-header__nav-item">Фотографии</li>
+          <li class="main-header__nav-item">Конкурс</li>
+          <li class="main-header__nav-item">HTML Academy</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="index-content">
+      <h1 class="visually-hidden">Приложение "Pink"</h1>
+      <section class="index-content__intro intro">
+        <h2 class="visually-hidden">Скачай "Pink"</h2>
+        <img class="intro__image">
+        <div class="intro__get-app">
+          <button class="intro__btn btn">Скачать приложение</button>
+          <div class="intro__os os">
+            <ul class="os__icons-list">
+              <li class="os__icon--apple"></li>
+              <li class="os__icon--android"></li>
+              <li class="os__icon--windows"></li>
+            </ul>
+            <p class="os__text"></p>
+          </div>
+        </div>
+      </section>
+      <section class="index-content__features features">
+        <h2 class="features__header header-qa">
+          <span class="header__question">Устали от серости мегаполиса?</span>
+          <span class="header__answer">Нам есть, что вам предложить!</span>
+        </h2>
+        <ul class="features__list">
+          <li class="features__item feature">
+            <h3 class="feature__header">
+              Поднимает настроение
+            </h3>
+            <p class="feature__text">Приложение позволит вам победить осеннюю хзандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item feature">
+            <h3 class="feature__header">
+              Меняет мир вокруг
+            </h3>
+            <p class="feature__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item feature">
+            <h3 class="feature__header">
+              Заводит новых друзей
+            </h3>
+            <p class="feature__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="index-content__reviews reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item review">
+            <h3 class="review__author"></h3>
+            <cite class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</cite>
+          </li>
   </body>
 </html>
