@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
 </head>
-<body class="body">
+<body class="body-index">
 <header class="page-header">
   <nav class="page-header__navigation navigation">
     <div class="page-header__top-menu">
@@ -33,12 +33,18 @@
   </div>
   <section class="index-content__get-app get-app">
     <h2 class="visually-hidden">Скачай "Pink"</h2>
-    <button class="get-app__btn btn" type="button">Скачать приложение</button>
+    <a class="get-app__btn btn" href="http://itunes.apple.com">Скачать приложение</a>
     <div class="get-app__os os">
       <ul class="os__icons-list">
-        <li class="os__icon--apple"></li>
-        <li class="os__icon--android"></li>
-        <li class="os__icon--windows"></li>
+        <li class="os__item">
+          <a class="os__icon--apple" href="http://itunes.apple.com">Appstore</a>
+        </li>
+        <li class="os__item">
+          <a class="os__icon--android" href="https://play.google.com/store.com">Google play</a>
+        </li>
+        <li class="os__item">
+          <a class="os__icon--windows" href="https://www.microsoft.com/ru-ru/store/b/home">Microsoft store</a>
+        </li>
       </ul>
       <p class="os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
@@ -85,44 +91,46 @@
       </p>
     </div>
   </section>
-  <section class="index-content__packages packages">
+  <section class="index-content__tariffs tariffs">
     <h2 class="visually-hidden">Пакеты "Pink"</h2>
-    <table class="packages__table">
-      <tr>
-        <td class="packages__name-wrapper">
-          <h3 class="packages__name"></h3>
-          <p class="packages__price"></p>
-        </td>
-        <td class="packages__name-wrapper--hit">
-          <h3 class="packages__name">Стандарт</h3>
-          <p class="packages__price">3,99 USD</p>
-        </td>
-        <td class="packages__name-wrapper">
-          <h3 class="packages__name"></h3>
-          <p class="packages__price"></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="packages__element">Розовый фильтр</td>
-        <td class="packages__element">Розовый фильтр</td>
-        <td class="packages__element">Розовый фильтр</td>
-      </tr>
-      <tr>
-        <td class="packages__element--none">Смайлики</td>
-        <td class="packages__element">Смайлики</td>
-        <td class="packages__element">Смайлики</td>
-      </tr>
-      <tr>
-        <td class="packages__element--none">Комментарии</td>
-        <td class="packages__element--none">Комментарии</td>
-        <td class="packages__element">Комментарии</td>
-      </tr>
-    </table>
-    <p class="packages__toggles slider__toggles">
+    <div class="tariffs__wrapper slider">
+      <table class="tariffs__table">
+        <tr>
+          <td class="tariffs__name-wrapper">
+            <h3 class="tariffs__name"></h3>
+            <p class="tariffs__price"></p>
+          </td>
+          <td class="tariffs__name-wrapper--hit">
+            <h3 class="tariffs__name">Стандарт</h3>
+            <p class="tariffs__price">3,99 USD</p>
+          </td>
+          <td class="tariffs__name-wrapper">
+            <h3 class="tariffs__name"></h3>
+            <p class="tariffs__price"></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="tariffs__element">Розовый фильтр</td>
+          <td class="tariffs__element">Розовый фильтр</td>
+          <td class="tariffs__element">Розовый фильтр</td>
+        </tr>
+        <tr>
+          <td class="tariffs__element--none">Смайлики</td>
+          <td class="tariffs__element">Смайлики</td>
+          <td class="tariffs__element">Смайлики</td>
+        </tr>
+        <tr>
+          <td class="tariffs__element--none">Комментарии</td>
+          <td class="tariffs__element--none">Комментарии</td>
+          <td class="tariffs__element">Комментарии</td>
+        </tr>
+      </table>
+    <p class="tariffs__toggles slider__toggles">
       <button class="slider__toggle" type="button">1</button>
       <button class="slider__toggle" type="button">2</button>
       <button class="slider__toggle" type="button">3</button>
     </p>
+    </div>
   </section>
   <section class="index-content__contacts contacts">
     <h2 class="visually-hidden">Наши контакты</h2>
