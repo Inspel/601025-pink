@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Пинк: Форма</title>
+</head>
+
+<body class="body-form">
+<header class="page-header">
+  <nav class="page-header__navigation navigation">
+    <div class="page-header__top-menu">
+      <a class="page-header__link-main" href="index.html">
+        <img class="page-header__logo logo" src="#" alt="Логотип &quot;Pink&quot;">
+      </a>
+      <button class="page-header__nav-btn burger-btn" type="button">Бургер</button>
+    </div>
+    <ul class="page-header__nav-list">
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link" href="index.html">Главная</a>
+      </li>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link" href="photo.html">Фотографии</a>
+      </li>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link active-page" href="#">Конкурс</a>
+      </li>
+      <li class="page-header__nav-item">
+        <a class="page-header__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="form-content">
+  <div class="form-content__intro intro">
+    <h1 class="form-content__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </div>
+  <form class="form-content__main-form main-form">
+    <p class="main-form__instruction">
+      Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+    </p>
+    <fieldset class="main-form__name name-block">
+      <ul class="name-block__list">
+        <li class="name-block__item">
+          <label class="name-block__label" for="surname">Фамилия:</label>
+          <input class="name-block__input" id="surname" name="name" value="Укажите фамилию *" required>
+        </li>
+        <li class="name-block__item">
+          <label class="name-block__label" for="name">Имя:</label>
+          <input class="name-block__input" id="name" name="name" value="Введите ваше имя *" required>
+        </li>
+        <li class="name-block__item">
+          <label class="name-block__label" for="patronymic">Отчество:</label>
+          <input class="name-block__input" id="patronymic" name="patronymic" value="Ну и отчество тоже">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="main-form__achievements achievements-block">
+      <legend class="achievements-block__form-block-name">Ваши безбашенные достижения в путешествии</legend>
+      <ul class="achievements-block__list">
+        <li class="achievements-block__item">
+          <input class="achievements-block__checkbox visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
+          <label for="shark-selfie">Сделал селфи с акулой</label>
+        </li>
+        <li class="achievements-block__item">
+          <input class="achievements-block__checkbox visually-hidden" id="burned-man" type="checkbox" name="burned-man" checked>
+          <label for="burned-man">Обгорел на пляже</label>
+        </li>
+        <li class="achievements-block__item">
+          <input class="achievements-block__checkbox visually-hidden" id="norris-witness" type="checkbox" name="norris-witness">
+          <label for="norris-witness">Видел Чака Норриса</label>
+        </li>
+        <li class="achievements-block__item">
+          <input class="achievements-block__checkbox visually-hidden" id="shopaholic" type="checkbox" name="shopaholic">
+          <label for="shopaholic">Накупил сувениров</label>
+        </li>
+        <li class="achievements-block__item">
+          <input class="achievements-block__checkbox visually-hidden" id="atlas" type="checkbox" name="atlas" checked>
+          <label for="atlas">Удержал башню</label>
+        </li>
+        <li class="achievements-block__item">
+          <input class="achievements-block__checkbox visually-hidden" id="godzilla" type="checkbox" name="godzilla">
+          <label for="godzilla">Разгромил отель</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="main-form__contacts contacts-block">
+      <ul class="contacts-block__list">
+        <li class="contacts-block__item">
+          <label class="contacts-block__label" for="phone"></label>
+          <input class="contacts-block__input" type="tel" id="phone" value="Номер, пожалуйста">
+        </li>
+        <li class="contacts-block__item">
+          <label class="contacts-block__label" for="phone"></label>
+          <input class="contacts-block__input" type="email" id="mail" value="Введите почту *" required>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="main-form__apps-block">
+      <legend class="apps-block__question">С каким приложением путешествовали?</legend>
+      <ul class="apps-block__list">
+        <li class="apps-block__item">
+          <input class="apps-block__radio" type="radio" id="ios">
+          <label class="apps-block__label" for="ios">Pink для iOS</label>
+        </li>
+        <li class="apps-block__item">
+          <input class="apps-block__radio" type="radio" id="android">
+          <label class="apps-block__label" for="android">Pink для Android</label>
+        </li>
+        <li class="apps-block__item">
+          <input class="apps-block__radio" type="radio" id="windows">
+          <label class="apps-block__label" for="windows">Windows Phone</label>
+        </li>
+      </ul>
+    </fieldset>
+    <div class="main-form__impressions-block impressions">
+      <label class="impressions__instruction" for="impressions">Опишите свои эмоции</label>
+      <textarea class="impressions__input" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
+    </div>
+    <button class="main-form__submit-btn" type="submit">Отправить форму</button>
+    <p class="main-form__required-legend">
+      <span class="main-form__legend-asterisk">*</span> &mdash; обязательные поля
+    </p>
+  </form>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <img class="page-footer__logo logo" src="#" alt="Логотип &quot;Pink&quot;">
+    <div class="page-footer__social-wrapper">
+      <ul class="page-footer__social social-block">
+        <li class="social-block__item">
+          <a class="social-block__btn--twitter" href="https://twitter.com">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-block__btn--facebook" href="https://www.facebook.com">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-block__btn--youtube" href="https://www.youtube.com">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
