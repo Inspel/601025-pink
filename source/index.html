@@ -13,46 +13,46 @@
       <img class="page-header__logo logo" src="http://placehold.it/150x100" alt="Логотип &quot;Pink&quot;">
       <button class="page-header__nav-btn burger-btn" type="button">Бургер</button>
     </div>
-    <ul class="page-header__nav-list">
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link active-page" href="#">Главная</a>
+    <ul class="navigation__nav-list">
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link active-page" href="#">Главная</a>
       </li>
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="photo.html">Фотографии</a>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="photo.html">Фотографии</a>
       </li>
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="form.html">Конкурс</a>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="form.html">Конкурс</a>
       </li>
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="index-content">
+<main class="page-content">
 
-  <div class="index-content__intro">
+  <div class="page-content__intro">
     <h1 class="visually-hidden">Приложение "Pink"</h1>
   </div>
 
-  <section class="index-content__get-app get-app">
+  <section class="page-content__get-app get-app">
     <h2 class="visually-hidden">Скачай "Pink"</h2>
     <a class="get-app__btn btn" href="http://itunes.apple.com">Скачать приложение</a>
     <div class="get-app__os os">
-      <ul class="os__icons-list">
+      <ul class="os__list">
         <li class="os__item">
-          <a class="os__icon--apple" href="http://itunes.apple.com">
+          <a class="os__link os__link--apple" href="http://itunes.apple.com">
             <span class="visually-hidden">Appstore</span>
           </a>
         </li>
         <li class="os__item">
-          <a class="os__icon--android" href="https://play.google.com/store">
+          <a class="os__link os__link--android" href="https://play.google.com/store">
             <span class="visually-hidden">Google play</span>
           </a>
         </li>
         <li class="os__item">
-          <a class="os__icon--windows" href="https://www.microsoft.com/ru-ru/store/b/home">
+          <a class="os__link os__link--windows" href="https://www.microsoft.com/ru-ru/store/b/home">
             <span class="visually-hidden">Microsoft store</span>
           </a>
         </li>
@@ -61,7 +61,7 @@
     </div>
   </section>
 
-  <section class="index-content__features features">
+  <section class="page-content__features features">
     <div class="features__title">
       <p class="features__question">Устали от серости мегаполиса?</p>
       <p class="features__answer">Нам есть, что вам предложить!</p>
@@ -88,16 +88,18 @@
     </ul>
   </section>
 
-  <section class="index-content__reviews reviews">
+  <section class="page-content__reviews reviews">
     <h2 class="visually-hidden">Отзывы пользователей</h2>
     <div class="reviews__wrapper slider">
-      <div class="reviews__list  slider__list">
-        <blockquote class="reviews-item slider__item">
-          <cite class="reviews__author">Николай Петров</cite>
-          <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-        </blockquote>
-      </div>
-      <p class="reviews__toggles slider__toggles">
+      <ul class="reviews__list  slider__list">
+        <li class="reviews-item slider__item">
+          <blockquote class="reviews__container">
+            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </blockquote>
+        </li>
+      </ul>
+      <p class="slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
@@ -105,59 +107,85 @@
     </div>
   </section>
 
-  <section class="index-content__tariffs tariffs">
+  <section class="page-content__tariffs tariffs">
     <h2 class="visually-hidden">Пакеты "Pink"</h2>
-    <div class="tariffs__wrapper slider">
-      <table class="tariffs__table">
-        <tr>
-          <td class="tariffs__name-wrapper">
+    <div class="tariffs-wrapper slider">
+      <ul class="tariffs__list slider__list">
+        <li class="tariffs__item slider__item">
+          <div class="tariffs__name-wrapper">
             <h3 class="tariffs__name"></h3>
             <p class="tariffs__price"></p>
-          </td>
-          <td class="tariffs__name-wrapper--hit">
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Розовый фильтр</span>
+            <span class="tariffs__function-availability">В наличии</span>
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Смайлики</span>
+            <span class="tariffs__function-availability tariffs__function-availability--none">Отсутствует</span>
+          </div>
+          <div class="tariffs__function-wrappers">
+            <span class="tariffs__function">Комментарии</span>
+            <span class="tariffs__function-availability tariffs__function-availability--none">Отсутствует</span>
+          </div>
+        </li>
+        <li class="tariffs__item slider__item">
+          <div class="tariffs__name-wrapper tariffs__name-wrapper--hit">
             <h3 class="tariffs__name">Стандарт</h3>
             <p class="tariffs__price">3,99 USD</p>
-          </td>
-          <td class="tariffs__name-wrapper">
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Розовый фильтр</span>
+            <span class="tariffs__function-availability">В наличии</span>
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariff__function">Смайлики</span>
+            <span class="tariff__function-availability">В наличии</span>
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Комментарии</span>
+            <span class="tariffs__function-availability tariffs__function-availability--none">Отсутствует</span>
+          </div>
+        </li>
+        <li class="tariffs__item slider__item">
+          <div class="tariffs__name-wrapper">
             <h3 class="tariffs__name"></h3>
             <p class="tariffs__price"></p>
-          </td>
-        </tr>
-        <tr>
-          <td class="tariffs__element">Розовый фильтр</td>
-          <td class="tariffs__element">Розовый фильтр</td>
-          <td class="tariffs__element">Розовый фильтр</td>
-        </tr>
-        <tr>
-          <td class="tariffs__element--none">Смайлики</td>
-          <td class="tariffs__element">Смайлики</td>
-          <td class="tariffs__element">Смайлики</td>
-        </tr>
-        <tr>
-          <td class="tariffs__element--none">Комментарии</td>
-          <td class="tariffs__element--none">Комментарии</td>
-          <td class="tariffs__element">Комментарии</td>
-        </tr>
-      </table>
-    <p class="tariffs__toggles slider__toggles">
-      <button class="slider__toggle" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
-    </p>
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Розовый фильтр</span>
+            <span class="tariffs__function-availability">В наличии</span>
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Смайлики</span>
+            <span class="tariffs__function-availability">В наличии</span>
+          </div>
+          <div class="tariffs__function-wrapper">
+            <span class="tariffs__function">Комментарии</span>
+            <span class="tariffs__function-availability">В наличии</span>
+          </div>
+        </li>
+      </ul>
+      <p class="slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
     </div>
+
   </section>
 
-  <section class="index-content__contacts contacts">
+  <section class="page-content__contacts contacts">
     <h2 class="visually-hidden">Наши контакты</h2>
     <div class="contacts__wrapper">
       <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
       <p class="contacts__text">
         <span class="contacts__intro">Звоните:</span>
-        <span class="contacts__info">+7(812)555-66-66</span>
+        <a href="#" class="contacts__info">+7(812)555-66-66</a>
       </p>
       <p class="contacts__text">
         <span class="contacts__intro">Пишите:</span>
-        <span class="contacts__info">mail@htmlacademy.ru</span>
+        <a href="#" class="contacts__info">mail@htmlacademy.ru</a>
       </p>
       <p class="contacts__text">
         <span class="contacts__intro">Приезжайте в гости:</span>

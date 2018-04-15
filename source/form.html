@@ -11,119 +11,119 @@
   <nav class="page-header__navigation navigation">
     <div class="page-header__top-menu">
       <a class="page-header__link-main" href="index.html">
-        <img class="page-header__logo logo" src="http://placehold.it/150x100" alt="Логотип &quot;Pink&quot;">
+        <img class="navigation__logo logo" src="http://placehold.it/150x100" alt="Логотип &quot;Pink&quot;">
       </a>
-      <button class="page-header__nav-btn burger-btn" type="button">Бургер</button>
+      <button class="navigation__nav-btn burger-btn" type="button">Бургер</button>
     </div>
-    <ul class="page-header__nav-list">
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="index.html">Главная</a>
+    <ul class="navigation__nav-list">
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="index.html">Главная</a>
       </li>
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="photo.html">Фотографии</a>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="photo.html">Фотографии</a>
       </li>
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link active-page" href="#">Конкурс</a>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link active-page" href="#">Конкурс</a>
       </li>
-      <li class="page-header__nav-item">
-        <a class="page-header__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="form-content">
+<main class="page-content">
 
-  <div class="form-content__intro intro">
-    <h1 class="form-content__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <div class="page-content__intro intro">
+    <h1 class="page-content__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </div>
 
-  <form class="form-content__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
+  <form class="page-content__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
     <p class="main-form__instruction">
       Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
     </p>
 
-    <fieldset class="main-form__name name-block">
-      <ul class="name-block__list">
-        <li class="name-block__item">
-          <label class="name-block__label" for="surname">Фамилия:</label>
-          <input class="name-block__input" id="surname" name="name" value="Укажите фамилию *" required>
+    <fieldset class="main-form__name form-block">
+      <ul class="form-block__list">
+        <li class="form-block__item">
+          <label class="form-block__label" for="surname">Фамилия:</label>
+          <input class="form-block__input" id="surname" name="name" value="Укажите фамилию *" required>
         </li>
-        <li class="name-block__item">
-          <label class="name-block__label" for="name">Имя:</label>
-          <input class="name-block__input" id="name" name="name" value="Введите ваше имя *" required>
+        <li class="form-block__item">
+          <label class="form-block__label" for="name">Имя:</label>
+          <input class="form-block__input" id="name" name="name" value="Введите ваше имя *" required>
         </li>
-        <li class="name-block__item">
-          <label class="name-block__label" for="patronymic">Отчество:</label>
-          <input class="name-block__input" id="patronymic" name="patronymic" value="Ну и отчество тоже">
-        </li>
-      </ul>
-    </fieldset>
-
-    <fieldset class="main-form__achievements achievements-block">
-      <legend class="achievements-block__form-block-name">Ваши безбашенные достижения в путешествии</legend>
-      <ul class="achievements-block__list">
-        <li class="achievements-block__item">
-          <input class="achievements-block__checkbox visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
-          <label for="shark-selfie">Сделал селфи с акулой</label>
-        </li>
-        <li class="achievements-block__item">
-          <input class="achievements-block__checkbox visually-hidden" id="burned-man" type="checkbox" name="burned-man" checked>
-          <label for="burned-man">Обгорел на пляже</label>
-        </li>
-        <li class="achievements-block__item">
-          <input class="achievements-block__checkbox visually-hidden" id="norris-witness" type="checkbox" name="norris-witness">
-          <label for="norris-witness">Видел Чака Норриса</label>
-        </li>
-        <li class="achievements-block__item">
-          <input class="achievements-block__checkbox visually-hidden" id="shopaholic" type="checkbox" name="shopaholic">
-          <label for="shopaholic">Накупил сувениров</label>
-        </li>
-        <li class="achievements-block__item">
-          <input class="achievements-block__checkbox visually-hidden" id="atlas" type="checkbox" name="atlas" checked>
-          <label for="atlas">Удержал башню</label>
-        </li>
-        <li class="achievements-block__item">
-          <input class="achievements-block__checkbox visually-hidden" id="godzilla" type="checkbox" name="godzilla">
-          <label for="godzilla">Разгромил отель</label>
+        <li class="form-block__item">
+          <label class="form-block__label" for="patronymic">Отчество:</label>
+          <input class="form-block__input" id="patronymic" name="patronymic" value="Ну и отчество тоже">
         </li>
       </ul>
     </fieldset>
 
-    <fieldset class="main-form__contacts contacts-block">
-      <ul class="contacts-block__list">
-        <li class="contacts-block__item">
-          <label class="contacts-block__label" for="phone"></label>
-          <input class="contacts-block__input" type="tel" id="phone" value="Номер, пожалуйста">
+    <fieldset class="main-form__achievements form-block">
+      <legend class="form-block__name">Ваши безбашенные достижения в путешествии</legend>
+      <ul class="form-block__list">
+        <li class="form-block__item">
+          <input class="form-block__checkbox visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
+          <label class="form-block__label" for="shark-selfie">Сделал селфи с акулой</label>
         </li>
-        <li class="contacts-block__item">
-          <label class="contacts-block__label" for="phone"></label>
-          <input class="contacts-block__input" type="email" id="mail" value="Введите почту *" required>
+        <li class="form-block__item">
+          <input class="form-block__checkbox visually-hidden" id="burned-man" type="checkbox" name="burned-man" checked>
+          <label class="form-block__label" for="burned-man">Обгорел на пляже</label>
+        </li>
+        <li class="form-block__item">
+          <input class="form-block__checkbox visually-hidden" id="norris-witness" type="checkbox" name="norris-witness">
+          <label class="form-block__label" for="norris-witness">Видел Чака Норриса</label>
+        </li>
+        <li class="form-block__item">
+          <input class="form-block__checkbox visually-hidden" id="shopaholic" type="checkbox" name="shopaholic">
+          <label class="form-block__label" for="shopaholic">Накупил сувениров</label>
+        </li>
+        <li class="form-block__item">
+          <input class="form-block__checkbox visually-hidden" id="atlas" type="checkbox" name="atlas" checked>
+          <label class="form-block__label" for="atlas">Удержал башню</label>
+        </li>
+        <li class="form-block__item">
+          <input class="form-block__checkbox visually-hidden" id="godzilla" type="checkbox" name="godzilla">
+          <label class="form-block__label" for="godzilla">Разгромил отель</label>
         </li>
       </ul>
     </fieldset>
 
-    <fieldset class="main-form__apps-block">
-      <legend class="apps-block__question">С каким приложением путешествовали?</legend>
-      <ul class="apps-block__list">
-        <li class="apps-block__item">
-          <input class="apps-block__radio" type="radio" id="ios">
-          <label class="apps-block__label" for="ios">Pink для iOS</label>
+    <fieldset class="main-form__contacts form-block">
+      <ul class="form-block__list">
+        <li class="form-block__item">
+          <label class="form-block__label" for="phone">Номер телефона</label>
+          <input class="form-block__input" type="tel" id="phone" value="Номер, пожалуйста">
         </li>
-        <li class="apps-block__item">
-          <input class="apps-block__radio" type="radio" id="android">
-          <label class="apps-block__label" for="android">Pink для Android</label>
-        </li>
-        <li class="apps-block__item">
-          <input class="apps-block__radio" type="radio" id="windows">
-          <label class="apps-block__label" for="windows">Windows Phone</label>
+        <li class="form-block__item">
+          <label class="form-block__label" for="email">Адрес почты</label>
+          <input class="form-block__input" type="email" id="email" value="Введите почту *" required>
         </li>
       </ul>
     </fieldset>
 
-    <div class="main-form__impressions-block impressions">
-      <label class="impressions__instruction" for="impressions">Опишите свои эмоции</label>
-      <textarea class="impressions__input" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
+    <fieldset class="main-form__apps form-block">
+      <legend class="form-block__name">С каким приложением путешествовали?</legend>
+      <ul class="form-block__list">
+        <li class="form-block__item">
+          <input class="form-block__radio" type="radio" id="ios">
+          <label class="form-block__label" for="ios">Pink для iOS</label>
+        </li>
+        <li class="form-block__item">
+          <input class="form-block__radio" type="radio" id="android">
+          <label class="form-block__label" for="android">Pink для Android</label>
+        </li>
+        <li class="form-block__item">
+          <input class="form-block__radio" type="radio" id="windows">
+          <label class="form-block__label" for="windows">Windows Phone</label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <div class="main-form__impressions form-block">
+      <label class="form-block__label" for="impressions">Опишите свои эмоции</label>
+      <textarea class="form-block__input" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
     </div>
 
     <button class="main-form__submit-btn" type="submit">Отправить форму</button>
@@ -159,17 +159,17 @@
     <div class="page-footer__social-wrapper">
       <ul class="page-footer__social social-block">
         <li class="social-block__item">
-          <a class="social-block__btn--twitter" href="https://twitter.com">
+          <a class="social-block__btn social-block__btn--twitter" href="https://twitter.com">
             <span class="visually-hidden">twitter</span>
           </a>
         </li>
         <li>
-          <a class="social-block__btn--facebook" href="https://www.facebook.com">
+          <a class="social-block__btn social-block__btn--facebook" href="https://www.facebook.com">
             <span class="visually-hidden">facebook</span>
           </a>
         </li>
         <li>
-          <a class="social-block__btn--youtube" href="https://www.youtube.com">
+          <a class="social-block__btn social-block__btn--youtube" href="https://www.youtube.com">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>
