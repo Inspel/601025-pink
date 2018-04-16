@@ -9,11 +9,11 @@
 
 <header class="page-header">
   <nav class="page-header__navigation navigation">
-    <div class="page-header__top-menu">
-      <a class="page-header__link-main" href="index.html">
-        <img class="page-header__logo logo" src="http://placehold.it/150x100" alt="Логотип &quot;Pink&quot;">
+    <div class="navigation__top-menu">
+      <a class="navigation__link-main" href="index.html">
+        <img class="navigation__logo logo" src="http://placehold.it/150x100" alt="Логотип &quot;Pink&quot;">
       </a>
-      <button class="page-header__nav-btn burger-btn" type="button">Бургер</button>
+      <button class="navigation__nav-btn burger-btn" type="button">Бургер</button>
     </div>
     <ul class="navigation__nav-list">
       <li class="navigation__nav-item">
@@ -149,31 +149,27 @@
   <section class="page-content__upload upload">
     <h2 class="visually-hidden">Загрузи свое фото!</h2>
     <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="upload__input-container visually-hidden">
-        <label class="upload__input-label" for="upload-photo">Загрузи свое фото!</label>
-        <input class="upload__input" type="file" id="upload-photo">
-      </div>
       <div class="upload__photo-container">
         <img class="upload__photo" src="http://placehold.it/150x100" alt="Твое фото!">
       </div>
       <div class="upload__instruments instruments">
         <ul class="instruments__list">
           <li class="instruments__crop">
-            <button class="instruments__button instruments__button--crop"></button>
+            <button class="instruments__button instruments__button--crop">crop</button>
             <div class="instruments__slider slider">
               <div class="slider__scale"></div>
               <div class="slider__toggle"></div>
             </div>
           </li>
           <li class="instruments__fill">
-            <button class="instruments__button instruments__button--fill"></button>
+            <button class="instruments__button instruments__button--fill">fill</button>
             <div class="instruments__slider slider">
               <div class="slider__scale"></div>
               <div class="slider__toggle"></div>
             </div>
           </li>
           <li class="instruments__contrast">
-            <button class="instruments__button instruments__button--contrast"></button>
+            <button class="instruments__button instruments__button--contrast">contrast</button>
             <div class="instruments__slider slider-photo">
               <div class="slider-photo__scale"></div>
               <div class="slider-photo__toggle"></div>
