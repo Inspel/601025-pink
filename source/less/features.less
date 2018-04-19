@@ -1,6 +1,9 @@
 .features {
   padding-bottom: 370px;
   background-color: #f2f2f2;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   &__title-wrapper {
     padding-top: 35px;
     background-color: #ffffff;
@@ -14,14 +17,9 @@
     font-weight: 300;
     color: #283645;
   }
-  &__title-triangle {
-    width: 100%;
-    height: 100%;
-  }
   &__list {
-    margin: 0;
-    margin-top: -31px;
-    padding: 0;
+    .reset-list();
+    margin-top: -30px;
     padding-top: 27px;
     background-color: #f2f2f2;
   }
