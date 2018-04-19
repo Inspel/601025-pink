@@ -2,7 +2,39 @@
   margin: 0;
   padding: 0;
 
+  &__link-main {
+    font-size: 0;
+  }
+
+  &__top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px;
+    border-top: none;
+  }
+
   &__nav-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-item {
+    display: flex;
+    justify-content: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__nav-link {
+    font-family: @Open_Sans-font-var;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
   }
 }
