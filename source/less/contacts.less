@@ -29,19 +29,32 @@
   height: 100%;
 }
 
-.contacts__map-wrapper {
+.contacts__wrapper {
   position: relative;
-  height: 200px;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .contacts__text {
   margin: 0;
 }
 
-.contacts__map {
-  display: block;
+.contacts__map-wrapper {
+  position: relative;
+  height: 200px;
+  margin-top: -38px;
+  overflow: hidden;
+}
+
+.contacts__map-marker {
   position: absolute;
-  margin-bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 50%;
+  z-index: 1;
+}
+
+.contacts__map {
+  position: absolute;
   bottom: 0;
+  z-index: 0;
 }
