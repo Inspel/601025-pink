@@ -37,7 +37,10 @@
 
 @media (min-width: @desktop-width) {
   .navigation {
+    position: absolute;
     display: flex;
+    width: 100%;
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
@@ -47,5 +50,20 @@
 
   .navigation__nav-list {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navigation__nav-item {
+    border: none;
+  }
+
+  .navigation__nav-link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
   }
 }
