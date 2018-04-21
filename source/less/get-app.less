@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.get-app__slogan {
+  display: none;
+}
+
 .get-app__btn {
   color: #ffffff;
   border-color: #ffffff;
@@ -10,4 +14,18 @@
 
 .get-app__os {
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .get-app {
+    width: 320px;
+  }
+
+  .get-app__slogan {
+    display: inline;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #ffffff;
+  }
 }

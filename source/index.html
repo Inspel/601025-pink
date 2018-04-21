@@ -44,7 +44,8 @@
     </div>
 
     <section class="page-content__get-app get-app">
-      <h2 class="visually-hidden">Скачай "Pink"</h2>
+      <h2 class="visually-hidden">Установи "Pink!"</h2>
+      <p class="get-app__slogan">Взгляните на жизнь иначе!</p>
       <a class="get-app__btn btn" href="http://itunes.apple.com">Скачать приложение</a>
       <div class="get-app__os os">
         <ul class="os__list">
@@ -116,24 +117,36 @@
       </ul>
     </section>
 
+    <section class="page-content__effect effect">
+      <h2 class="effect__header">Эффект на 24 часа!</h2>
+      <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="effect__link" href="#">Узнать больше об иследовании</a>
+    </section>
+
     <section class="page-content__reviews reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper slider">
         <ul class="reviews__list  slider__list">
           <li class="reviews__item slider__item">
-            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__author">Николай Петров
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            </p>
+            <blockquote class="reviews__container">
+              <p class="reviews__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
+            </blockquote>
+          </li>
+          <li class="reviews__item slider__item">
+            <p class="reviews__author">Николай Петров
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            </p>
             <blockquote class="reviews__container">
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </blockquote>
           </li>
           <li class="reviews__item slider__item">
-            <p class="reviews__author">Николай Петров</p>
-            <blockquote class="reviews__container">
-              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </blockquote>
-          </li>
-          <li class="reviews__item slider__item">
-            <p class="reviews__author">Николай Петров</p>
+            <p class="reviews__author">Николай Петров
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
+            </p>
             <blockquote class="reviews__container">
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </blockquote>
@@ -152,12 +165,23 @@
 
     <section class="page-content__tariffs tariffs">
       <h2 class="visually-hidden">Пакеты "Pink"</h2>
-      <div class="tariffs-wrapper slider">
+      <div class="tariffs__wrapper slider">
         <ul class="tariffs__list slider__list">
+          <li class="tariffs__item tariffs__item--functions">
+            <div class="tariffs__function-wrapper">
+              <span class="tariffs__function tariffs__function--visible">Розовый фильтр</span>
+            </div>
+            <div class="tariffs__function-wrapper">
+              <span class="tariffs__function tariffs__function--visible">Смайлики</span>
+            </div>
+            <div class="tariffs__function-wrapper">
+              <span class="tariffs__function tariffs__function--visible">Комментарии</span>
+            </div>
+          </li>
           <li class="tariffs__item slider__item">
             <div class="tariffs__name-wrapper">
-              <h3 class="tariffs__name"></h3>
-              <p class="tariffs__price"></p>
+              <h3 class="tariffs__name">База</h3>
+              <p class="tariffs__price">1,99 USD</p>
             </div>
             <div class="tariffs__function-wrapper">
               <span class="tariffs__function">Розовый фильтр</span>
@@ -167,7 +191,7 @@
               <span class="tariffs__function">Смайлики</span>
               <span class="tariffs__function-availability tariffs__function-availability--none">Отсутствует</span>
             </div>
-            <div class="tariffs__function-wrappers">
+            <div class="tariffs__function-wrapper">
               <span class="tariffs__function">Комментарии</span>
               <span class="tariffs__function-availability tariffs__function-availability--none">Отсутствует</span>
             </div>
@@ -182,8 +206,8 @@
               <span class="tariffs__function-availability">В наличии</span>
             </div>
             <div class="tariffs__function-wrapper">
-              <span class="tariff__function">Смайлики</span>
-              <span class="tariff__function-availability">В наличии</span>
+              <span class="tariffs__function">Смайлики</span>
+              <span class="tariffs__function-availability">В наличии</span>
             </div>
             <div class="tariffs__function-wrapper">
               <span class="tariffs__function">Комментарии</span>
@@ -192,8 +216,8 @@
           </li>
           <li class="tariffs__item slider__item">
             <div class="tariffs__name-wrapper">
-              <h3 class="tariffs__name"></h3>
-              <p class="tariffs__price"></p>
+              <h3 class="tariffs__name">Анлим</h3>
+              <p class="tariffs__price">9,99 USD</p>
             </div>
             <div class="tariffs__function-wrapper">
               <span class="tariffs__function">Розовый фильтр</span>
@@ -209,7 +233,7 @@
             </div>
           </li>
         </ul>
-        <p class="slider__toggles">
+        <p class="tariffs__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>

@@ -19,10 +19,9 @@
 }
 
 .navigation__nav-item {
-  display: flex;
-  justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: center;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
 }
@@ -34,4 +33,19 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .navigation {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .navigation__nav-btn {
+    display: none;
+  }
+
+  .navigation__nav-list {
+    display: flex;
+  }
 }

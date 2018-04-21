@@ -1,3 +1,15 @@
+//Переменные
+@tablet-width: 660px;
+@desktop-width: 1200px;
+
+//Миксины
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//Общие стили
 .visually-hidden {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -18,10 +30,15 @@
   height: 100%;
 }
 
-//Миксины
-
-.reset-list() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: @tablet-width) {
+  .container {
+    width: 660px;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+  }
+}
+

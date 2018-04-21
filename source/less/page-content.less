@@ -42,6 +42,10 @@
   background-color: #ffffff;
 }
 
+.page-content__effect {
+  display: none;
+}
+
 .page-content&__tariffs {
   margin-top: -30px;
   background-color: #f2f2f2;
@@ -59,4 +63,25 @@
 
 .page-content__upload {
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .page-content {
+    position: relative;
+  }
+
+  .page-content__get-app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  .page-content__reviews {
+    margin-top: 0;
+  }
+
+  .page-content__effect {
+    display: block;
+  }
 }
