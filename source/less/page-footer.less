@@ -2,3 +2,17 @@
   padding: 40px;
   background-color: #ffffff;
 }
+
+.page-footer--index-moblie {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .page-footer--index-moblie {
+    display: block;
+  }
+}
