@@ -1,10 +1,10 @@
 .page-footer {
   padding: 40px;
   background-color: #ffffff;
-}
 
-.page-footer--index-moblie {
-  display: none;
+  &--index-moblie {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -13,7 +13,9 @@
     justify-content: space-around;
   }
 
-  .page-footer--index-moblie {
-    display: block;
+  .page-footer {
+    &--index-moblie {
+      display: block;
+    }
   }
 }
