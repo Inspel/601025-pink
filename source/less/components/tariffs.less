@@ -43,6 +43,14 @@
 @media (min-width: @tablet-width) {
   .tariffs__name {
     font-size: 16px;
+
+    &--right {
+      border-left: 3px solid #e7e7e7;
+    }
+
+    &--middle {
+      border-left: 3px solid #e7e7e7;
+    }
   }
 
   .tariffs__price {
@@ -53,17 +61,11 @@
     display: flex;
   }
 
-  .tariffs__name-wrapper--right {
-    border-left: 3px solid #e7e7e7;
-  }
-
-  .tariffs__name-wrapper--middle {
-    border-left: 3px solid #e7e7e7;
-  }
-
-  .tariffs__item--functions {
-    display: block;
-    align-self: flex-end;
+  .tariffs__item {
+    &--functions {
+      display: block;
+      align-self: flex-end;
+    }
   }
 
   .tariffs__function-wrapper {
@@ -74,20 +76,24 @@
     background-color: #ffffff;
   }
 
-  .tariffs__function-wrapper--top-left {
-    border-top: 3px solid #e7e7e7;
-  }
+  .tariffs__function-wrapper {
+    &--top-left {
+      border-top: 3px solid #e7e7e7;
+    }
 
-  .tariffs__function-wrapper--right-column {
-    border-right: 3px solid #e7e7e7;
+    &--right-column {
+      border-right: 3px solid #e7e7e7;
+    }
   }
 
   .tariffs__function {
     display: none;
   }
 
-  .tariffs__function--visible {
-    display: inline;
+  .tariffs__function {
+    &--visible {
+      display: inline;
+    }
   }
 
   .tariffs__toggles {
