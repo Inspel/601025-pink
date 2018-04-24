@@ -48,96 +48,112 @@
 
     <form class="page-content__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="main-form__instruction">
-        Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+        Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
       </p>
 
-      <fieldset class="main-form__block">
-        <ul class="main-form__list">
-          <li class="main-form__item">
-            <label class="main-form__label" for="surname">Фамилия:</label>
-            <input class="main-form__input" id="surname" name="name" value="Укажите фамилию *" required>
-          </li>
-          <li class="main-form__item">
-            <label class="main-form__label" for="name">Имя:</label>
-            <input class="main-form__input" id="name" name="name" value="Введите ваше имя *" required>
-          </li>
-          <li class="main-form__item">
-            <label class="main-form__label" for="patronymic">Отчество:</label>
-            <input class="main-form__input" id="patronymic" name="patronymic" value="Ну и отчество тоже">
-          </li>
-        </ul>
-      </fieldset>
+      <div class="main-form__wrapper">
 
-      <fieldset class="main-form__block main-form__block--dark-bg">
-        <legend class="main-form__label">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="main-form__list">
-          <li class="main-form__item">
-            <input class="main-form__checkbox visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
-            <label class="main-form__label main-form__label--radio-check" for="shark-selfie">Сделал селфи с акулой</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__checkbox visually-hidden" id="burned-man" type="checkbox" name="burned-man" checked>
-            <label class="main-form__label main-form__label--radio-check" for="burned-man">Обгорел на пляже</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__checkbox visually-hidden" id="norris-witness" type="checkbox" name="norris-witness">
-            <label class="main-form__label main-form__label--radio-check" for="norris-witness">Видел Чака Норриса</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__checkbox visually-hidden" id="shopaholic" type="checkbox" name="shopaholic">
-            <label class="main-form__label main-form__label--radio-check" for="shopaholic">Накупил сувениров</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__checkbox visually-hidden" id="atlas" type="checkbox" name="atlas" checked>
-            <label class="main-form__label main-form__label--radio-check" for="atlas">Удержал башню</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__checkbox visually-hidden" id="godzilla" type="checkbox" name="godzilla">
-            <label class="main-form__label main-form__label--radio-check" for="godzilla">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
+        <div class="main-form__block main-form__block--name">
+          <ul class="main-form__list main-form__list--name">
+            <li class="main-form__item main-form__item--name">
+              <label class="main-form__label" for="surname">Фамилия:</label>
+              <input class="main-form__input main-form__input--name" id="surname" name="name" value="Укажите фамилию *" required>
+            </li>
+            <li class="main-form__item main-form__item--name">
+              <label class="main-form__label" for="name">Имя:</label>
+              <input class="main-form__input main-form__input--name" id="name" name="name" value="Введите ваше имя *" required>
+            </li>
+            <li class="main-form__item main-form__item--name">
+              <label class="main-form__label" for="patronymic">Отчество:</label>
+              <input class="main-form__input main-form__input--name" id="patronymic" name="patronymic" value="Ну и отчество тоже">
+            </li>
+          </ul>
+        </div>
 
-      <fieldset class="main-form__block">
-        <ul class="main-form__list">
-          <li class="main-form__item">
-            <label class="main-form__label" for="phone">Номер телефона</label>
-            <input class="main-form__input" type="tel" id="phone" value="Номер, пожалуйста">
-          </li>
-          <li class="main-form__item">
-            <label class="main-form__label" for="email">Адрес почты</label>
-            <input class="main-form__input" type="email" id="email" value="Введите почту *" required>
-          </li>
-        </ul>
-      </fieldset>
+        <div class="main-form__block main-form__block--achievments">
+          <fieldset class="main-form__fieldset main-form__fieldset--achievments">
+            <legend class="main-form__label">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="main-form__list main-form__list--achievments">
+              <li class="main-form__item main-form__item--achievments">
+                <input class="main-form__checkbox visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
+                <label class="main-form__label main-form__label--radio-check" for="shark-selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="main-form__item main-form__item--achievments">
+                <input class="main-form__checkbox visually-hidden" id="burned-man" type="checkbox" name="burned-man" checked>
+                <label class="main-form__label main-form__label--radio-check" for="burned-man">Обгорел на пляже</label>
+              </li>
+              <li class="main-form__item main-form__item--achievments">
+                <input class="main-form__checkbox visually-hidden" id="norris-witness" type="checkbox" name="norris-witness">
+                <label class="main-form__label main-form__label--radio-check" for="norris-witness">Видел Чака Норриса</label>
+              </li>
+              <li class="main-form__item main-form__item--achievments">
+                <input class="main-form__checkbox visually-hidden" id="shopaholic" type="checkbox" name="shopaholic">
+                <label class="main-form__label main-form__label--radio-check" for="shopaholic">Накупил сувениров</label>
+              </li>
+              <li class="main-form__item main-form__item--achievments">
+                <input class="main-form__checkbox visually-hidden" id="atlas" type="checkbox" name="atlas" checked>
+                <label class="main-form__label main-form__label--radio-check" for="atlas">Удержал башню</label>
+              </li>
+              <li class="main-form__item main-form__item--achievments">
+                <input class="main-form__checkbox visually-hidden" id="godzilla" type="checkbox" name="godzilla">
+                <label class="main-form__label main-form__label--radio-check" for="godzilla">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-      <fieldset class="main-form__block main-form__block--dark-bg">
-        <legend class="main-form__label">С каким приложением путешествовали?</legend>
-        <ul class="main-form__list">
-          <li class="main-form__item">
-            <input class="main-form__radio" type="radio" id="ios">
-            <label class="main-form__label main-form__label--radio-check" for="ios">Pink для iOS</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__radio" type="radio" id="android">
-            <label class="main-form__label main-form__label--radio-check" for="android">Pink для Android</label>
-          </li>
-          <li class="main-form__item">
-            <input class="main-form__radio" type="radio" id="windows">
-            <label class="main-form__label main-form__label--radio-check" for="windows">Windows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
+        <div class="main-form__block main-form__block--contacts">
+          <fieldset class="main-form__fieldset main-form__fieldset--contacts">
+            <legend class="main-form__label main-form__label--contacts">Контактная информация</legend>
+            <ul class="main-form__list main-form__list--contacts">
+              <li class="main-form__item main-form__item--contacts">
+                <label class="main-form__label" for="phone">Номер телефона</label>
+                <input class="main-form__input" type="tel" id="phone" value="Номер, пожалуйста">
+              </li>
+              <li class="main-form__item main-form__item--contacts">
+                <label class="main-form__label" for="email">Адрес почты</label>
+                <input class="main-form__input" type="email" id="email" value="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-      <div class="main-form__block">
-        <label class="main-form__label" for="impressions">Опишите свои эмоции</label>
-        <textarea class="main-form__input" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <div class="main-form__block main-form__block--apps">
+          <fieldset class="main-form__fieldset main-form__fieldset--apps">
+            <legend class="main-form__label">С каким приложением путешествовали?</legend>
+            <ul class="main-form__list main-form__list--apps">
+              <li class="main-form__item">
+                <input class="main-form__radio" type="radio" id="ios">
+                <label class="main-form__label main-form__label--radio-check" for="ios">Pink для iOS</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__radio" type="radio" id="android">
+                <label class="main-form__label main-form__label--radio-check" for="android">Pink для Android</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__radio" type="radio" id="windows">
+                <label class="main-form__label main-form__label--radio-check" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="main-form__block main-form__block--impressions">
+          <fieldset class="main-form__fieldset main-form__fieldset--impressions">
+            <legend class="main-form__label main-form__label--impressions-">Опишите свои эмоции</legend>
+            <label class="main-form__label--mobile" for="impressions">Опишите свои эмоции</label>
+            <textarea class="main-form__input main-form__input--impressions" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+        </div>
+
+        <div class="main-form__block main-form__block--submit">
+          <button class="main-form__submit-btn btn-form" type="submit">Отправить форму</button>
+          <p class="main-form__required-legend">
+            <span class="main-form__legend-asterisk">*</span> &mdash; обязательные поля
+          </p>
+        </div>
+
       </div>
-
-      <button class="main-form__submit-btn btn-form" type="submit">Отправить форму</button>
-      <p class="main-form__required-legend">
-        <span class="main-form__legend-asterisk">*</span> &mdash; обязательные поля
-      </p>
 
     </form>
 
