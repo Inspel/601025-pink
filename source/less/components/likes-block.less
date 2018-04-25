@@ -4,3 +4,18 @@
   text-transform: uppercase;
   color: #d22856;
 }
+
+@media (min-width: @tablet-width) {
+  .likes-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .likes-block__quantity {
+    order: 1;
+  }
+
+  .likes-block__btn {
+    order: 2;
+  }
+}

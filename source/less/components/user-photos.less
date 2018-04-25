@@ -11,6 +11,7 @@
 
 .user-photos__list {
   .reset-list();
+  padding: 0 20px;
 }
 
 .user-photos__item {
@@ -22,4 +23,67 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photos__intro {
+    font-size: 18px;
+  }
+
+  .user-photos__list {
+    display: flex;
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .user-photos__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    margin: 0 10px 20px;
+
+    &--photo-of-day {
+      width: 620px;
+      margin-bottom: 50px;
+      padding: 0;
+    }
+  }
+
+  .user-photos__photo--panorama-of-day {
+    display: block;
+    width: 100vw;
+    margin-left: calc(~"-50vw + 330px");
+    margin-right: calc(~"-50vw + 330px");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photos__list {
+    width: 960px;
+    margin: 0;
+    padding: 0 120px;
+  }
+
+  .user-photos__item {
+    margin: 0 10px;
+
+    &--photo-of-day {
+      width: 940px;
+    }
+  }
+
+  .user-photos__commentary {
+    &--photo-of-day {
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+  }
+
+  .user-photos__photo--panorama-of-day {
+    margin-left: calc(~"-50vw + 600px");
+    margin-right: calc(~"-50vw + 600px");
+  }
 }
