@@ -1,5 +1,6 @@
 .btn {
   display: block;
+  width: 280px;
   padding: 14px 30px 17px 30px;
   font-size: 18px;
   line-height: 18px;
@@ -10,12 +11,22 @@
 }
 
 .btn-form {
+  width: 280px;
+  padding: 16px 48px 17px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  color: white;
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: #2aab6d;
   border: none;
+  border-radius: 2px;
+
+  &[disabled] {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #e5e5e5;
+
+  }
 }
 
 @media (min-width: @desktop-width) {
