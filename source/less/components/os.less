@@ -5,9 +5,11 @@
 .os__list {
   .reset-list();
   display: flex;
-  padding-bottom: 13px;
-  justify-content: space-around;
-  align-items: center;
+  padding-left: 37px;
+  padding-right: 38px;
+  margin-bottom: 16px;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .os__text {
@@ -16,6 +18,26 @@
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.os__item {
+  &--apple {
+    margin-right: 35px;
+  }
+
+  &--android {
+    margin-right: 37px;
+  }
+}
+
+.os__link {
+  &--android svg {
+    padding-bottom: 2px;
+  }
+
+  &--win svg {
+    padding-bottom: 3px;
+  }
 }
 
 @media (min-width: @tablet-width) {
