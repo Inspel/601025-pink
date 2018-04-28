@@ -1,15 +1,28 @@
-.get-app__intro {
-  height: 462px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top left, top left;
+.get-app {
+  text-align: center;
 }
 
+.get-app__intro {
+  position: relative;
+  height: 462px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: top left;
 
-.get-app__install {
-  text-align: center;
-  background-color: #1d2631;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 258px;
+    height: 286px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.get-app__container {
+  padding: 28px 20px 30px 20px;
 }
 
 .get-app__slogan {
@@ -17,6 +30,7 @@
 }
 
 .get-app__btn {
+
   color: #ffffff;
   border-color: #ffffff;
 
@@ -27,7 +41,7 @@
   }
 
   &:active {
-    color: rgba(210, 40, 86, 0.3)
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 

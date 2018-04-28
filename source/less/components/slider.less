@@ -1,0 +1,56 @@
+.slider {
+  width: 320px;
+}
+
+.slider__list {
+  width: 1000px;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  transition: 0.5s left;
+}
+
+.slider__item {
+  float: left;
+}
+
+.slider__toggles-wrapper {
+  display: flex;
+  width: 62px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__toggle {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: #bec2c7;
+  border: 3px solid white;
+
+  &--tariffs {
+    border: 3px solid #f2f2f2;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+
+  &--active {
+    background-color: transparent;
+    border-color: #283645;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
