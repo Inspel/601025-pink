@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Пинк: Форма</title>
-  <meta name="viewport" content="width=device-wdth, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/picturefill.min.js"></script>
 </head>
 
 <body class="body">
 
-<div class="container">
+<header class="page-header">
 
-  <header class="page-header">
-    <nav class="page-header__navigation navigation">
+  <nav class="page-header__navigation navigation navigation--nojs">
+
+    <div class="navigation__container container">
+
       <div class="navigation__top-menu">
         <a class="navigation__link-main" href="index.html">
           <svg class="navigation__logo navigation__logo--link" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -25,28 +27,43 @@
             </g>
           </svg>
         </a>
-        <button class="navigation__nav-btn burger-btn" type="button">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+        <button class="navigation__nav-btn" type="button">
+          <svg class="navigation__nav-icon navigation__nav-icon--cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
+
+          <svg class="navigation__nav-icon navigation__nav-icon--burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+  <g id="miu">
+    <g id="editor_list_view_hambuger_menu_glyph">
+      <g>
+        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+      </g>
+      <g>
+        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+      </g>
+    </g>
+  </g>
+</svg>
         </button>
       </div>
-      <ul class="navigation__nav-list">
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link navigation__nav-link--active">Конкурс</a>
-        </li>
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+    <ul class="navigation__nav-list">
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="index.html">Главная</a>
+      </li>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="photo.html">Фотографии</a>
+      </li>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link navigation__nav-link--active">Конкурс</a>
+      </li>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
 
   <main class="page-content">
 
@@ -242,7 +259,8 @@
     </div>
   </footer>
 
-</div>
+<script src="js/navigation.js"></script>
+<script src="js/sliders.js"></script>
 
 </body>
 
