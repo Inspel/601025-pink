@@ -30,7 +30,6 @@
 }
 
 .get-app__btn {
-
   color: #ffffff;
   border-color: #ffffff;
 
@@ -50,8 +49,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .get-app {
-    width: 320px;
+  .get-app__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .get-app__intro {
+    height: 0;
   }
 
   .get-app__slogan {

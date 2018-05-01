@@ -1,8 +1,9 @@
 .main-form {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 
 .main-form__instruction {
+  padding: 0 20px;
   margin: 0;
   font-size: 14px;
   line-height: 30px;
@@ -15,8 +16,7 @@
 }
 
 .main-form__block {
-  padding: 0;
-  border: none;
+  width: 100%;
   background-color: #ffffff;
 
   &--achievments,
@@ -25,7 +25,14 @@
   }
 }
 
+.main-form__block-wrapper {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
 .main-form__fieldset {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
   border: none;
 }
@@ -136,7 +143,6 @@
       display: flex;
       justify-content: space-between;
       order: 6;
-      border: none;
     }
   }
 
@@ -160,22 +166,39 @@
 
 @media (min-width: @desktop-width) {
   .main-form {
-    padding: 40px 120px;
+    padding: 40px 0;
   }
 
   .main-form__wrapper {
+    width: 960px;
+    margin: 0 auto;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   .main-form__block {
+    &--name {
+      width: 470px;
+    }
+
+    &--apps {
+      width: 470px;
+    }
+  }
+
+  .main-form__block-wrapper {
     display: flex;
-    justify-content: space-between;
+    padding: 0 10px;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
-    &--name,
+    &--name {
+      width: 470px;
+    }
+
     &--apps {
-      width: 50%;
+      width: 470px;
     }
 
     &--contacts,
@@ -187,7 +210,7 @@
   }
 
   .main-form__fieldset {
-    width: 100%;
+    margin: 0;
     padding: 40px 60px;
   }
 
