@@ -1,5 +1,4 @@
-.user-photos__intro {
-  margin: 0;
+.user-photos__intro-text {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 55px;
@@ -10,7 +9,7 @@
 }
 
 .user-photos__list {
-  .reset-list();
+  .reset-list;
   padding: 0 20px;
 }
 
@@ -19,15 +18,23 @@
 }
 
 .user-photos__outro {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
 }
 
+.user-photos__photo--panorama-of-day {
+  display: block;
+  width: 100vw;
+  margin-left: calc(~"-50vw + 140px");
+  margin-right: calc(~"-50vw + 160px");
+}
+
 @media (min-width: @tablet-width) {
-  .user-photos__intro {
+  .user-photos__intro-text {
     font-size: 18px;
   }
 
@@ -63,9 +70,10 @@
 
 @media (min-width: @desktop-width) {
   .user-photos__list {
+    box-sizing: border-box;
     width: 960px;
     margin: 0;
-    padding: 0 120px;
+    padding: 0;
   }
 
   .user-photos__item {
@@ -84,7 +92,7 @@
   }
 
   .user-photos__photo--panorama-of-day {
-    margin-left: calc(~"-50vw + 600px");
-    margin-right: calc(~"-50vw + 600px");
+    margin-left: calc(~"-50vw + 480px");
+    margin-right: calc(~"-50vw + 480");
   }
 }
