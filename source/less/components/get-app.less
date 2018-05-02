@@ -1,21 +1,20 @@
 .get-app {
-  text-align: center;
-}
-
-.get-app__intro {
   position: relative;
-  height: 462px;
+  padding-top: 462px;
+  text-align: center;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
+  background-size: 100% auto;
   background-position: top left;
+
 
   &::after {
     position: absolute;
     content: "";
     width: 258px;
     height: 286px;
-    bottom: 0;
+    top: 462px;
     left: 0;
+    transform: translate(0, -100%);
     background-image: url("../../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
   }
@@ -23,6 +22,7 @@
 
 .get-app__wrapper {
   padding: 28px 20px 30px 20px;
+  background-color: #283645;
 }
 
 .get-app__slogan {
@@ -51,8 +51,11 @@
 @media (min-width: @tablet-width) {
   .get-app__wrapper {
     display: flex;
+    padding-top: 160px;
+    padding-left: 20px;
+    padding-right: 340px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .get-app__intro {
@@ -60,11 +63,16 @@
   }
 
   .get-app__slogan {
+    margin: 0;
     display: inline;
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
     color: #ffffff;
+  }
+
+  .get-app__btn {
+    width: 300px;
   }
 }
 
