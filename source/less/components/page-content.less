@@ -27,10 +27,14 @@
 }
 
 .page-content__features {
-  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 
 .page-content__reviews {
+  position: relative;
+  margin-top: -43px;
+  z-index: 3;
   background-color: #ffffff;
 }
 
@@ -83,5 +87,11 @@
 
   .page-content__user-photos {
     margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-content__effect {
+    background-color: #f2f2f2;
   }
 }

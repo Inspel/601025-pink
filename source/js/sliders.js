@@ -1,6 +1,6 @@
 let start_reviews = 0;
 
-const width_reviews = 320;
+const width_reviews = @w;
 
 const list_reviews = document.querySelector('.slider__list--reviews');
 

@@ -1,8 +1,35 @@
-.effect {
-  padding-left: 310px;
+.effect__wrapper {
+  position: relative;
+  padding-top: 95px;
+  padding-left: 329px;
+  padding-right: 20px;
+  padding-bottom: 83px;
+  background-image: url("../../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 239px auto;
+  background-position: 20px 60px;
+
+  &::before {
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 17px;
+    left: 39px;
+    top: 114px;
+    content: "24";
+    width: 203px;
+    height: 202px;
+    font-size: 96px;
+    font-weight: bold;
+    text-align: center;
+    color: #d22856;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
 }
 
 .effect__header {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
@@ -10,22 +37,21 @@
 }
 
 .effect__text {
+  margin: 0;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
 }
 
 .effect__link {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: #d22856;
 }
 
 @media (min-width: @desktop-width) {
-  .effect {
-    background-color: #f2f2f2;
-  }
-
   .effect__header {
     font-size: 30px;
     line-height: 30px;

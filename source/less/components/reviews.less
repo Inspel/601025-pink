@@ -1,4 +1,4 @@
-.reviews {
+.reviews__wrapper {
   padding-top: 42px;
   padding-bottom: 42px;
 }
@@ -41,9 +41,12 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .reviews__item {
     display: flex;
+    width: 660px;
     flex-direction: column-reverse;
+    justify-content: flex-start;
   }
 
   .reviews__author {
