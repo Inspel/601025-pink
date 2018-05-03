@@ -5,17 +5,23 @@
 }
 
 .copyright__text {
+  margin-right: 15px;
+  padding-top: 3px;
+  align-self: center;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
 }
 
-.copyright__text {
-  margin-right: 15px;
-  padding-top: 3px;
-  align-self: center;
-}
-
 .copyright__link {
   align-self: flex-end;
+
+  &:hover path,
+  &:focus path {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
