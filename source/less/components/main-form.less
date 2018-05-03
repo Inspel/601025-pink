@@ -1,8 +1,9 @@
 .main-form {
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .main-form__instruction {
+  padding: 0 20px;
   margin: 0;
   font-size: 14px;
   line-height: 30px;
@@ -10,13 +11,30 @@
   color: #283645;
 }
 
+.main-form__instruction span {
+  display: none;
+}
+
 .main-form__block {
-  border: none;
+  width: 100%;
   background-color: #ffffff;
 
-  &--dark-bg {
+  &--achievments,
+  &--apps {
     background-color: #f2f2f2;
   }
+}
+
+.main-form__block-wrapper {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.main-form__fieldset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .main-form__list {
@@ -41,6 +59,18 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+
+  &:hover {
+    border-color: #283645;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
+  }
 }
 
 .main-form__required-legend {
@@ -52,4 +82,165 @@
 
 .main-form__legend-asterisk {
   color: #d22856;
+}
+
+.main-form__label--contacts,
+.main-form__label--impressions {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-form__instruction {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .main-form__instruction span {
+    display: inline;
+  }
+
+  .main-form__item {
+    &--name {
+      display: flex;
+    }
+  }
+
+  .main-form__input {
+    &--name {
+      flex-grow: 1;
+    }
+  }
+
+  .main-form__block {
+    &--name {
+      order: 1;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--achievments {
+      background-color: #ffffff;
+      order: 4;
+    }
+
+    &--apps {
+      background-color: #ffffff;
+      order: 2;
+    }
+
+    &--impressions {
+      order: 5;
+    }
+
+    &--submit {
+      display: flex;
+      justify-content: space-between;
+      order: 6;
+    }
+  }
+
+  .main-form__fieldset {
+    border: 2px solid #e5e5e5;
+
+    &--name {
+      border: none;
+    }
+  }
+
+  .main-form__label--contacts,
+  .main-form__label--impressions {
+    display: block;
+  }
+
+  .main-form__label--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form {
+    padding: 40px 0;
+  }
+
+  .main-form__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .main-form__block {
+    &--name {
+      width: 470px;
+    }
+
+    &--apps {
+      width: 470px;
+    }
+  }
+
+  .main-form__block-wrapper {
+    display: flex;
+    padding: 0 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &--name {
+      width: 470px;
+    }
+
+    &--apps {
+      width: 470px;
+    }
+
+    &--contacts,
+    &--achievments,
+    &--impressions,
+    &--submit {
+      width: 100%;
+    }
+  }
+
+  .main-form__fieldset {
+    margin: 0;
+    padding: 40px 60px;
+  }
+
+  .main-form__list {
+    width: 100%;
+
+    &--contacts {
+      display: flex;
+    }
+
+    &--achievments {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .main-form__item {
+    &--contacts {
+      display: flex;
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
+    &--achievments {
+      width: 260px;
+    }
+  }
+
+  .main-form__input--impressions {
+    width: 820px;
+    height: 130px;
+  }
 }

@@ -1,4 +1,5 @@
 .photo-commentary__username {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -22,4 +23,30 @@
   line-height: 24px;
   color: #283645;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-commentary {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    &--photo-of-day {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .photo-commentary__text-wrapper--photo-of-day {
+    order: 3;
+  }
+
+  .photo-commentary__likes {
+    margin-top: auto;
+  }
+
+  .photo-commentary__likes--photo-of-day {
+    margin-left: auto;
+    order: 2;
+  }
 }

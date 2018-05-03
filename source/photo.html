@@ -3,41 +3,65 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк: Фото</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body class="body">
 
-<div class="container">
+<header class="page-header">
 
-  <header class="page-header">
-    <nav class="page-header__navigation navigation">
+  <nav class="page-header__navigation navigation navigation--nojs">
+
+    <div class="container">
+
       <div class="navigation__top-menu">
-        <a class="navigation__link-main" href="index.html">
-          <img class="navigation__logo logo" src="../img/logo-pink-white-mobile.svg" alt="Логотип &quot;Pink&quot;">
-        </a>
-        <button class="navigation__nav-btn burger-btn" type="button">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+        <svg class="navigation__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+            <g>
+              <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+              <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+              <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+              <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+            </g>
+        </svg>
+        <button class="navigation__nav-btn" type="button">
+          <svg class="navigation__nav-icon navigation__nav-icon--cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
+
+          <svg class="navigation__nav-icon navigation__nav-icon--burger" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+  <g id="miu">
+    <g id="editor_list_view_hambuger_menu_glyph">
+      <g>
+        <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+      </g>
+      <g>
+        <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+      </g>
+    </g>
+  </g>
+</svg>
         </button>
       </div>
-      <ul class="navigation__nav-list">
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link navigation__nav-link--active">Фотографии</a>
-        </li>
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link" href="form.html">Конкурс</a>
-        </li>
-        <li class="navigation__nav-item">
-          <a class="navigation__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+    <ul class="navigation__nav-list">
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="index.html">Главная</a>
+      </li>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link navigation__nav-link--active">Фотографии</a>
+      </li>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="form.html">Конкурс</a>
+      </li>
+      <li class="navigation__nav-item">
+        <a class="navigation__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
 
   <main class="page-content">
 
@@ -47,22 +71,27 @@
 
     <section class="page-content__user-photos user-photos">
       <h2 class="visually-hidden">Фотографии наших пользователей</h2>
-      <p class="user-photos__intro">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
-      <ul class="user-photos__list">
-        <li class="user-photos__item">
+      <div class="user-photos__intro">
+        <p class="user-photos__intro-text container">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
+
+      <div class="container">
+
+        <ul class="user-photos__list">
+        <li class="user-photos__item user-photos__item--photo-of-day">
           <a class="user-photos__link" href="#">
             <img class="user-photos__photo user-photos__photo--panorama-of-day" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид с моста">
           </a>
-          <div class="user-photos__commentary photo-commentary">
+          <div class="user-photos__commentary photo-commentary photo-commentary--photo-of-day">
             <p class="photo-commentary__username">Анна
               <span class="photo-commentary__time">(5 минут назад)</span>
             </p>
-            <blockquote class="photo-commentary__text-wrapper">
+            <blockquote class="photo-commentary__text-wrapper photo-commentary__text-wrapper--photo-of-day">
               <p class="photo-commentary__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             </blockquote>
-            <div class="photo-commentary__likes likes-block">
+            <div class="photo-commentary__likes photo-commentary__likes--photo-of-day likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
@@ -213,12 +242,14 @@
           </div>
         </li>
       </ul>
+
+      </div>
       <p class="user-photos__outro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
 
     <section class="page-content__upload upload">
       <h2 class="visually-hidden">Загрузи свое фото!</h2>
-      <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="upload__form container" action="https://echo.htmlacademy.ru" method="post">
         <div class="upload__photo-container">
           <img class="upload__photo" src="img/photo-road-mobile@1x.jpg" alt="Твое фото!">
         </div>
@@ -226,30 +257,30 @@
           <ul class="instruments__list">
             <li class="instruments__crop">
               <button class="instruments__button instruments__button--crop">crop</button>
-              <div class="instruments__slider slider">
-                <div class="slider__scale"></div>
-                <div class="slider__toggle"></div>
+              <div class="instruments__slider">
+                <div class="instruments__slider-scale"></div>
+                <div class="instruments__slider-toggle"></div>
               </div>
             </li>
             <li class="instruments__fill">
               <button class="instruments__button instruments__button--fill">fill</button>
-              <div class="instruments__slider slider">
-                <div class="slider__scale"></div>
-                <div class="slider__toggle"></div>
+              <div class="instruments__slider">
+                <div class="instruments__slider-scale"></div>
+                <div class="instruments__slider-toggle"></div>
               </div>
             </li>
             <li class="instruments__contrast">
               <button class="instruments__button instruments__button--contrast">contrast</button>
-              <div class="instruments__slider slider-photo">
-                <div class="slider-photo__scale"></div>
-                <div class="slider-photo__toggle"></div>
+              <div class="instruments__slider">
+                <div class="instruments__slider-scale"></div>
+                <div class="instruments__slider-toggle"></div>
               </div>
             </li>
           </ul>
-        </div>
-        <div class="upload__btns-wrapper">
-          <button class="upload__btn-post btn" type="submit">Запостить</button>
-          <button class="upload__btn-cancel btn" type="reset">Отмена</button>
+          <div class="upload__btns-wrapper">
+            <button class="upload__btn-post btn" type="submit">Запостить</button>
+            <button class="upload__btn-cancel btn" type="reset">Отмена</button>
+          </div>
         </div>
       </form>
     </section>
@@ -313,7 +344,8 @@
     </div>
   </footer>
 
-</div>
+<script src="js/navigation.js"></script>
+<script src="js/sliders.js"></script>
 
 </body>
 

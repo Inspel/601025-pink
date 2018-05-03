@@ -1,4 +1,24 @@
 .page-footer {
-  padding: 40px;
   background-color: #ffffff;
+
+  &--index-moblie {
+    display: none;
+  }
+}
+
+.page-footer__wrapper {
+  padding: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .page-footer {
+    &--index-moblie {
+      display: block;
+    }
+  }
 }
