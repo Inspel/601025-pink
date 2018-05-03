@@ -9,12 +9,12 @@
   &::before {
     box-sizing: border-box;
     position: absolute;
-    padding-top: 84px;
     left: 20px;
     top: 60px;
     content: "24";
     width: 240px;
     height: 276px;
+    padding-top: 84px;
     font-size: 96px;
     font-weight: bold;
     text-align: center;
@@ -42,6 +42,10 @@
   color: #283645;
 }
 
+.effect__br-desktop {
+  display: none;
+}
+
 .effect__link {
   margin: 0;
   font-size: 14px;
@@ -50,12 +54,40 @@
 }
 
 @media (min-width: @desktop-width) {
+  .effect__wrapper {
+    padding-top: 125px;
+    padding-left: 376px;
+    padding-right: 20px;
+    padding-bottom: 113px;
+
+    &::before {
+      left: 9px;
+      top: 30px;
+      width: 300px;
+      height: 350px;
+      padding-top: 96px;
+      font-size: 120px;
+      line-height: 187px;
+      background-size: 300px auto;
+    }
+  }
+
+  .effect__br-tablet {
+    display: none;
+  }
+
+  .effect__br-desktop {
+    display: inline;
+  }
+
   .effect__header {
+    margin-bottom: 24px;
     font-size: 30px;
     line-height: 30px;
   }
 
   .effect__text {
+    margin-bottom: 31px;
     font-size: 18px;
     line-height: 30px;
   }

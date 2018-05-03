@@ -152,24 +152,39 @@
 
 @media (min-width: @desktop-width) {
   .navigation {
-    position: absolute;
+    position: relative;
+    box-sizing: border-box;
     display: flex;
-    width: 100%;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+
+    &--closed .navigation__nav-list {
+      display: flex;
+    }
+  }
+
+  .navigation__nav-list {
+    width: 620px;
+    justify-content: space-between;
+  }
+
+  .navigation__top-menu {
+    width: 150px;
+    display: block;
+    padding: 0;
+    margin: 0;
   }
 
   .navigation__nav-btn {
     display: none;
   }
 
-  .navigation--closed .navigation__nav-list {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-
   .navigation__nav-item {
+    padding-top: 45px;
+    padding-bottom: 43px;
     background-color: transparent;
     border: none;
   }

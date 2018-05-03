@@ -150,18 +150,44 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    padding-top: 65px;
+  }
+
   .contacts__title {
+    margin-bottom: 47px;
+    padding-left: 130px;
+    padding-right: 130px;
     font-size: 50px;
     line-height: 60px;
   }
 
+  .contacts__intro {
+    margin-bottom: 25px;
+    padding-left: 2px;
+  }
+
   .contacts__text {
+    margin-bottom: 0;
+
     &--address {
       order: 2;
+
+      .contacts__intro {
+        margin-bottom: 25px;
+      }
     }
 
     &--email {
       order: 3;
+
+      .contacts__intro {
+        margin-bottom: 27px;
+      }
     }
+  }
+
+  .contacts__map-wrapper {
+    height: 520px;
   }
 }
