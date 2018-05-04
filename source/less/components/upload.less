@@ -2,11 +2,9 @@
   padding: 20px 0;
 }
 
-.upload__wrapper {
-  border-bottom: 2px solid #dddfe0;
-}
-
 .upload__photo-wrapper {
+  position: relative;
+  margin: 0 auto;
   width: 280px;
   margin-bottom: 40px;
 }
@@ -15,7 +13,13 @@
   display: block;
 }
 
+.upload__instruments {
+  border-bottom: 2px solid #dddfe0;
+}
+
 .upload__btns-wrapper {
+  position: relative;
+  margin: 0 auto;
   padding-top: 37px;
   padding-bottom: 21px;
 }
@@ -62,8 +66,47 @@
 
 @media (min-width: @tablet-width) {
   .upload__form {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .upload__photo-wrapper {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .upload__photo {
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload__controls-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload__instruments {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+    width: 300px;
+    border-bottom: none;
+  }
+
+  .upload__btn-post,
+  .upload__btn-cancel {
+    width: 260px;
+  }
+
+  .upload__btn-post {
+    margin-bottom: 25px;
   }
 }
 

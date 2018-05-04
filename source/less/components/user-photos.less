@@ -42,6 +42,13 @@
   font-size: 0;
 }
 
+.user-photos__photo--panorama-of-day {
+  display: block;
+  width: 100vw;
+  margin-left: calc(~"-50vw + 140px");
+  margin-right: calc(~"-50vw + 160px");
+}
+
 .user-photos__outro {
   width: 320px;
   padding-top: 23px;
@@ -50,13 +57,6 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
-}
-
-.user-photos__photo--panorama-of-day {
-  display: block;
-  width: 100vw;
-  margin-left: calc(~"-50vw + 140px");
-  margin-right: calc(~"-50vw + 160px");
 }
 
 @media (min-width: @tablet-width) {
@@ -105,6 +105,12 @@
       margin-left: calc(~"-50vw + 330px");
       margin-right: calc(~"-50vw + 330px");
     }
+  }
+
+  .user-photos__outro {
+    width: 660px;
+    padding-top: 45px;
+    font-size: 18px;
   }
 }
 
