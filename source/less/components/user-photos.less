@@ -1,7 +1,5 @@
 .user-photos__intro-text {
-  padding: 0;
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding: 45px 35px 49px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -14,11 +12,39 @@
 }
 
 .user-photos__item {
+  position: relative;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
+
+  &--photo-of-day::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d22856;
+  }
+}
+
+.user-photos__link {
+  font-size: 0;
+}
+
+.user-photos__photo {
+  display: block;
+  font-size: 0;
 }
 
 .user-photos__outro {
   width: 320px;
+  padding-top: 23px;
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
