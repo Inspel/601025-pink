@@ -34,25 +34,33 @@
 @media (min-width: @tablet-width) {
   .photo-commentary {
     display: flex;
+    padding: 26px 27px 23px;
     flex-grow: 1;
     flex-direction: column;
+    justify-content: space-between;
 
     &--photo-of-day {
+      padding: 24px 27px 24px;
       flex-direction: row;
       flex-wrap: wrap;
     }
-  }
 
-  .photo-commentary__text-wrapper--photo-of-day {
-    order: 3;
-  }
+    .photo-commentary__text-wrapper {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
 
-  .photo-commentary__likes {
-    margin-top: auto;
-  }
+    .photo-commentary__text-wrapper--photo-of-day {
+      order: 3;
+    }
 
-  .photo-commentary__likes--photo-of-day {
-    margin-left: auto;
-    order: 2;
+    .photo-commentary__likes {
+      margin-top: auto;
+    }
+
+    .photo-commentary__likes--photo-of-day {
+      margin-left: auto;
+      order: 2;
+    }
   }
 }

@@ -61,6 +61,7 @@
 
 @media (min-width: @tablet-width) {
   .user-photos__intro-text {
+    padding: 93px 50px 75px;
     font-size: 18px;
   }
 
@@ -69,6 +70,7 @@
     width: calc(100% + 20px);
     margin: 0 -10px;
     justify-content: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
   }
 
@@ -76,6 +78,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: stretch;
     width: 300px;
     margin: 0 10px 20px;
 
@@ -83,14 +86,27 @@
       width: 620px;
       margin-bottom: 50px;
       padding: 0;
+
+      &::before {
+        top: 57px;
+      }
     }
   }
 
-  .user-photos__photo--panorama-of-day {
-    display: block;
-    width: 100vw;
-    margin-left: calc(~"-50vw + 330px");
-    margin-right: calc(~"-50vw + 330px");
+  .user-photos__photo {
+    //Временная высота
+    height: 300px;
+
+    &--panorama-of-day {
+      //Временная высота
+      height: 509px;
+      //Временная высота
+
+      display: block;
+      width: 100vw;
+      margin-left: calc(~"-50vw + 330px");
+      margin-right: calc(~"-50vw + 330px");
+    }
   }
 }
 
