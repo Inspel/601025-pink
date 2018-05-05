@@ -72,6 +72,9 @@
 }
 
 .main-form__block-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
   box-sizing: border-box;
   padding: 0;
   padding-left: 20px;
@@ -230,8 +233,12 @@
   color: #283645;
 }
 
-.main-form__legend-asterisk {
+.main-form__asterisk {
   color: #d22856;
+}
+
+.main-form__required-legend-desktop {
+  display: none;
 }
 
 //Стили для планшетной версии
@@ -246,6 +253,8 @@
   }
 
   .main-form__block-wrapper {
+    width: 660px;
+
     &--submit {
       padding-top: 22px;
       display: flex;
@@ -432,7 +441,11 @@
 //Стили для десктопной версии
 @media (min-width: @desktop-width) {
   .main-form {
-    padding: 40px 0;
+    padding-top: 92px;
+  }
+
+  .main-form__instruction {
+    padding: 0 80px;
   }
 
   .main-form__wrapper {
@@ -440,16 +453,29 @@
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .main-form__block {
     &--name {
-      width: 470px;
+      padding-top: 83px;
+      width: 480px;
     }
 
     &--apps {
-      width: 470px;
+      box-sizing: border-box;
+      margin-bottom: 0;
+      padding-top: 71px;
+      width: 480px;
+    }
+
+    &--impressions {
+      margin-bottom: 65px;
+    }
+
+    &--impressions legend {
+      margin-bottom: 34px;
     }
   }
 
@@ -460,53 +486,159 @@
     flex-wrap: wrap;
 
     &--name {
-      width: 470px;
+      padding-right: 35px;
+      margin: 0;
+      width: 480px;
     }
 
     &--apps {
-      width: 470px;
+      padding-right: 10px;
+      padding-left: 35px;
+      margin: 0;
+      width: 480px;
     }
 
     &--contacts,
     &--achievments,
-    &--impressions,
-    &--submit {
-      width: 100%;
+    &--impressions {
+      width: 960px;
     }
-  }
 
-  .main-form__fieldset {
-    margin: 0;
-    padding: 40px 60px;
+    &--submit {
+      width: 960px;
+      justify-content: space-between;
+    }
   }
 
   .main-form__list {
-    width: 100%;
+    width: auto;
+
+    &--name {
+      margin-bottom: 51px;
+    }
+
+    &--apps {
+      margin-bottom: 34px;
+    }
 
     &--contacts {
+      width: auto;
+      padding-right: 59px;
+      padding-top: 23px;
       display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
     &--achievments {
+      padding: 0 0;
+      padding-left: 60px;
+      padding-bottom: 13px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-start;
     }
   }
 
   .main-form__item {
+    &--name {
+      width: 435px;
+      margin-bottom: 52px;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+
     &--contacts {
       display: flex;
-      width: 100%;
+      width: 375px;
+      margin-bottom: 7px;
       flex-direction: column-reverse;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
     }
 
     &--achievments {
+
       width: 260px;
+
+      &:nth-child(1) {
+        order: 1;
+        margin-right: 54px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 54px;
+        order: 4;
+      }
+
+      &:nth-child(3) {
+        margin-right: 36px;
+        order: 2;
+      }
+
+      &:nth-child(4) {
+        margin-right: 36px;
+        order: 5;
+      }
+
+      &:nth-child(5) {
+        order: 3;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+      }
     }
   }
 
-  .main-form__input--impressions {
-    width: 820px;
-    height: 130px;
+  .main-form__label {
+    &--check {
+      margin: 0;
+      padding-left: 58px;
+    }
+  }
+
+  .main-form__checkbox + label::before {
+    top: 1px;
+    left: -2px;
+  }
+
+  .main-form__checkbox:checked + label::after {
+    top: 12px;
+    left: 7px;
+  }
+
+
+  .main-form__input {
+    &--impressions {
+      width: 820px;
+      min-height: 127px;
+    }
+  }
+
+  .main-form__fieldset {
+    width: 100%;
+    margin: 0;
+    padding: 0 0;
+
+    &--apps {
+      padding: 0 38px 26px 16px;
+    }
+
+    &--impressions {
+      padding-bottom: 38px;
+    }
+  }
+
+  .main-form__submit-btn {
+    margin: 0;
+  }
+
+  .main-form__required-legend-desktop {
+    display: inline;
   }
 }
