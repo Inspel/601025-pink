@@ -165,5 +165,71 @@
       right: 92px;
     }
   }
+}
 
+@media (min-width: @desktop-width) {
+  .instruments .container {
+    width: auto;
+    margin: 0;
+  }
+
+  .instruments__list {
+    width: 410px;
+    padding: 0;
+  }
+
+  .instruments__item {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 11px;
+    margin-bottom: 12px;
+  }
+
+  .instruments__button {
+    width: 48px;
+    height: 48px;
+
+    &--fill {
+      padding-left: 2px;
+      padding-top: 2px;
+    }
+  }
+
+  .instruments__icon {
+    width: 48px;
+    height: 48px;
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .instruments__slider {
+    padding-top: 23px;
+    padding-right: 28px;
+  }
+
+  .instruments__slider-scale {
+    width: 288px;
+  }
+
+  .instruments__slider-toggle {
+    top: 17px;
+    left: 71px;
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--contrast {
+      left: 92px;
+    }
+  }
 }

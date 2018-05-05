@@ -115,6 +115,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .user-photos__intro-text {
+    padding: 92px 160px 89px;
+  }
+
   .user-photos__list {
     box-sizing: border-box;
     width: 960px;
@@ -124,9 +128,15 @@
 
   .user-photos__item {
     margin: 0 10px;
+    margin-bottom: 54px;
 
     &--photo-of-day {
       width: 940px;
+      margin-bottom: 25px;
+
+      &::before {
+        top: 53px;
+      }
     }
   }
 
@@ -134,11 +144,26 @@
     &--photo-of-day {
       margin-left: 130px;
       margin-right: 130px;
+      padding-bottom: 49px;
     }
   }
 
-  .user-photos__photo--panorama-of-day {
-    margin-left: calc(~"-50vw + 480px");
-    margin-right: calc(~"-50vw + 480");
+  .user-photos__photo {
+    //Временная высота
+    height: 400px;
+
+    &--panorama-of-day {
+      //Временная высота
+      height: 505px;
+      //Временная высота
+      margin-left: calc(~"-50vw + 480px");
+      margin-right: calc(~"-50vw + 480");
+    }
+  }
+
+  .user-photos__outro {
+    padding-top: 5px;
   }
 }
+
+
