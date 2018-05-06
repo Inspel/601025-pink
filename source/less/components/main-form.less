@@ -330,6 +330,7 @@
     }
 
     &--contacts {
+      position: relative;
       display: flex;
       margin-bottom: 25px;
       flex-direction: column-reverse;
@@ -337,6 +338,36 @@
       &:nth-last-child(1) {
         margin-bottom: 20px;
       }
+    }
+
+    &--phone::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      z-index: 10;
+      width: 62px;
+      height: 62px;
+      background-color: #e5e5e5;
+      background-image: url("../../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
+
+    &--email::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      z-index: 10;
+      width: 62px;
+      height: 62px;
+      background-color: #e5e5e5;
+      background-image: url("../../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
     }
 
     &--achievments {
@@ -369,6 +400,7 @@
   }
 
   .main-form__input {
+    position: relative;
     width: auto;
 
     &--name {
