@@ -1,3 +1,7 @@
+.photo-commentary {
+  padding: 18px 18px 20px;
+}
+
 .photo-commentary__username {
   margin: 0;
   font-size: 14px;
@@ -16,9 +20,11 @@
 
 .photo-commentary__text-wrapper {
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .photo-commentary__text {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -28,25 +34,38 @@
 @media (min-width: @tablet-width) {
   .photo-commentary {
     display: flex;
+    padding: 24px 27px 22px;
     flex-grow: 1;
     flex-direction: column;
+    justify-content: space-between;
 
     &--photo-of-day {
+      padding: 24px 27px 24px;
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    .photo-commentary__text-wrapper {
+      flex-grow: 1;
+      margin-bottom: 12px;
+    }
+
+    .photo-commentary__text-wrapper--photo-of-day {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    .photo-commentary__likes {
+      margin-top: auto;
+    }
+
+    .photo-commentary__likes--photo-of-day {
+      margin-left: auto;
+      order: 2;
+    }
   }
 
-  .photo-commentary__text-wrapper--photo-of-day {
-    order: 3;
-  }
-
-  .photo-commentary__likes {
-    margin-top: auto;
-  }
-
-  .photo-commentary__likes--photo-of-day {
-    margin-left: auto;
-    order: 2;
+  .photo-commentary__text {
+    min-height: 48px;
   }
 }

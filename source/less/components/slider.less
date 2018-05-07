@@ -2,6 +2,10 @@
   width: 320px;
 }
 
+.slider__arrows-wrapper {
+  display: none;
+}
+
 .slider__list {
   width: 1000px;
   overflow: hidden;
@@ -64,3 +68,37 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .slider__toggles-wrapper {
+    display: none;
+  }
+
+  .slider__arrows-wrapper {
+    position: absolute;
+    top: 213px;
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .slider__arrow {
+    width: 22px;
+    height: 42px;
+    background: none;
+    border: none;
+
+    & path {
+      fill: #bec2c7;
+    }
+
+    &:hover path,
+    &:focus path {
+      fill: #7e868f;
+    }
+
+    &:active path {
+      fill: #e9ebec;
+    }
+  }
+}

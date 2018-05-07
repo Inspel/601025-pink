@@ -1,16 +1,235 @@
 .instruments__list {
   .reset-list();
+  position: relative;
   display: flex;
+  justify-content: space-between;
+  padding-left: 54px;
+  padding-right: 58px;
+  padding-bottom: 66px;
+}
+
+.instruments__item {
+  width: 48px;
+  height: auto;
+
+  &--fill {
+    padding-top: 2px;
+  }
+
+  &--contrast {
+    padding-top: 7px;
+  }
+}
+
+.instruments__button {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.instruments__icon {
+  fill: #b5b9be;
+
+  &:hover,
+  &:focus {
+    fill: #8d949b;
+  }
+
+  &:active {
+    fill: #d22856;
+  }
+
+  &--active {
+    fill: #d22856;
+
+    &:hover,
+    &:focus {
+      fill: #d22856;
+    }
+  }
+}
+
+.instruments__slider {
+  position: absolute;
+  display: none;
+  left: 38px;
+  bottom: 34px;
+  width: 240px;
+  height: auto;
+
+  &--active {
+    display: block;
+  }
+}
+
+.instruments__slider-scale {
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+}
+
+.instruments__slider-toggle {
+  position: absolute;
+  top: -6px;
+  right: 33px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .instruments {
-    display: flex;
-    flex-direction: column;
+  .instruments__wrapper {
+    border: none;
+    margin-bottom: 13px;
+
+    & .container {
+      position: static;
+      width: 300px;
+    }
   }
 
   .instruments__list {
     display: flex;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 0;
+    padding-left: 25px;
     flex-direction: column;
+  }
+
+  .instruments__item {
+    display: flex;
+    width: auto;
+    padding-top: 9px;
+    padding-left: 3px;
+    padding-right: 19px;
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .instruments__button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .instruments__icon {
+    width: 22px;
+    height: 22px;
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 26px;
+    }
+  }
+
+  .instruments__slider {
+    position: relative;
+    display: block;
+    width: auto;
+    padding-top: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .instruments__slider-scale {
+    width: 202px;
+  }
+
+  .instruments__slider-toggle {
+    top: 4px;
+    right: 41px;
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruments .container {
+    width: auto;
+    margin: 0;
+  }
+
+  .instruments__list {
+    width: 410px;
+    padding: 0;
+  }
+
+  .instruments__item {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 11px;
+    margin-bottom: 12px;
+  }
+
+  .instruments__button {
+    width: 48px;
+    height: 48px;
+
+    &--fill {
+      padding-left: 2px;
+      padding-top: 2px;
+    }
+  }
+
+  .instruments__icon {
+    width: 48px;
+    height: 48px;
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .instruments__slider {
+    padding-top: 23px;
+    padding-right: 28px;
+  }
+
+  .instruments__slider-scale {
+    width: 288px;
+  }
+
+  .instruments__slider-toggle {
+    top: 17px;
+    left: 71px;
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--contrast {
+      left: 92px;
+    }
   }
 }

@@ -1,8 +1,34 @@
 .upload__form {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.upload__photo-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+.upload__photo {
+  display: block;
+}
+
+.upload__instruments {
+  border-bottom: 2px solid #dddfe0;
+}
+
+.upload__btns-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 21px;
 }
 
 .upload__btn-post {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding: 15px 3px 16px 0;
   color: #d22856;
   border-color: #d22856;
   background-color: #ffffff;
@@ -19,6 +45,9 @@
 }
 
 .upload__btn-cancel {
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 3px 16px 0;
   opacity: 0.3;
   color: #b5b9be;
   border-color: #b5b9be;
@@ -37,13 +66,87 @@
 
 @media (min-width: @tablet-width) {
   .upload__form {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-bottom: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .upload__photo-wrapper {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .upload__photo {
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload__controls-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload__instruments {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+    width: 300px;
+    border-bottom: none;
+  }
+
+  .upload__btn-post,
+  .upload__btn-cancel {
+    width: 260px;
+  }
+
+  .upload__btn-post {
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .upload {
+    position: relative;
+    width: 940px;
+    margin: 0 auto 29px;
+  }
+
+  .upload__form {
+    width: auto;
+    padding-top: 50px;
+    padding-left: 59px;
+  }
+
+  .upload__instruments {
+    margin-left: 78px;
+    margin-right: 0;
+    margin-bottom: 96px;
+  }
+
+  .upload__photo-wrapper {
+    padding-top: 4px;
+  }
+
+  .upload__instruments {
+    width: 410px;
+  }
+
   .upload__btns-wrapper {
     display: flex;
+    width: 410px;
+    margin-right: 0;
+    justify-content: space-between;
+  }
+
+  .upload__btn-post,
+  .upload__btn-cancel {
+    margin: 0;
+    width: 183px;
   }
 }
