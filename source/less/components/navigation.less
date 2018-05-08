@@ -35,6 +35,8 @@
 }
 
 .navigation__nav-icon {
+  fill: #ffffff;
+
   &--cross {
     display: block;
   }
@@ -43,12 +45,12 @@
     display: none;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: #d22856;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 
@@ -63,14 +65,23 @@
   }
 }
 
-
 .navigation__logo {
   padding-bottom: 1px;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .navigation__logo--link {
-  &:hover path,
-  &:focus path {
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
     fill: #d22856;
   }
 
@@ -143,6 +154,14 @@
 
   .navigation__logo {
     height: 41px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .navigation__nav-btn {
@@ -190,6 +209,14 @@
 
   .navigation__logo {
     padding-bottom: 10px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .navigation__nav-item {
