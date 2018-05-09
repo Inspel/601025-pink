@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <title>Пинк: Фото</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
   <script src="js/picturefill.min.js"></script>
 </head>
 
 <body class="body">
+
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 
 <header class="page-header">
 
@@ -17,29 +21,34 @@
     <div class="container container--nav-mobile">
 
       <div class="navigation__top-menu">
-        <a class="navigation__link-main" href="index.html">
 
+        <a class="navigation__link-main" href="index.html">
           <svg class="navigation__logo navigation__logo--mobile navigation__logo--link" width="74.426px" height="22.859px">
-            <use xlink:href="img/sprite.svg#pink-logo-mobile"></use>
+            <title>На главную страницу</title>
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
           </svg>
 
           <svg class="navigation__logo navigation__logo--tablet navigation__logo--link" width="146.3px" height="40.375px">
-            <use xlink:href="img/sprite.svg#pink-logo-tablet"></use>
+            <title>На главную страницу</title>
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
           </svg>
 
           <svg class="navigation__logo navigation__logo--desktop navigation__logo--link" width="146.3px" height="40.375px">
-            <use xlink:href="img/sprite.svg#pink-logo-desktop"></use>
+            <title>На главную страницу</title>
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
           </svg>
         </a>
 
         <button class="navigation__nav-btn" type="button">
 
           <svg class="navigation__nav-icon navigation__nav-icon--cross" width="23.867px" height="23.867px">
-            <use xlink:href="img/sprite.svg#icon-cross"></use>
+            <title>Закрыть главное меню</title>
+            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
           </svg>
 
           <svg class="navigation__nav-icon navigation__nav-icon--burger" width="49.945px" height="24.007px">
-            <use xlink:href="img/sprite.svg#icon-burger"></use>
+            <title>Открыть главное меню</title>
+            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
           </svg>
 
         </button>
@@ -111,7 +120,8 @@
             <div class="photo-commentary__likes photo-commentary__likes--photo-of-day likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 215</span>
@@ -145,7 +155,8 @@
             <div class="photo-commentary__likes likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 356</span>
@@ -178,7 +189,8 @@
             <div class="photo-commentary__likes likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 666</span>
@@ -211,7 +223,8 @@
             <div class="photo-commentary__likes likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 215</span>
@@ -244,7 +257,8 @@
             <div class="photo-commentary__likes likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 4</span>
@@ -277,7 +291,8 @@
             <div class="photo-commentary__likes likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 150</span>
@@ -310,7 +325,8 @@
             <div class="photo-commentary__likes likes-block">
               <button class="likes-block__btn btn-heart" type="button">
                 <svg class="btn-heart__icon" width="12.545px" height="11.99px">
-                  <use xlink:href="img/sprite.svg#heart"></use>
+                  <title>Мне нравится</title>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
               </button>
               <span class="likes-block__quantity">Нравится: 2560</span>
@@ -349,7 +365,7 @@
                 <button class="instruments__button instruments__button--crop" type="button">
                   <svg class="instruments__icon instruments__icon--active" width="48px" height="48px">
                     <title>Вырезать</title>
-                    <use xlink:href="img/sprite.svg#crop"></use>
+                    <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                   </svg>
                 </button>
                 <div class="instruments__slider instruments__slider--active">
@@ -361,7 +377,7 @@
                 <button class="instruments__button instruments__button--fill" type="button">
                   <svg class="instruments__icon instruments__icon--fill" width="48px" height="48px">
                     <title>Заливка</title>
-                    <use xlink:href="img/sprite.svg#fill"></use>
+                    <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                   </svg>
                 </button>
                 <div class="instruments__slider">
@@ -373,7 +389,7 @@
                 <button class="instruments__button instruments__button--contrast" type="button">
                   <svg class="instruments__icon instruments__icon--contrast" width="31.92px" height="31.92px">
                     <title>Контраст</title>
-                    <use xlink:href="img/sprite.svg#contrast"></use>
+                    <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                   </svg>
                 </button>
                 <div class="instruments__slider">
@@ -398,10 +414,10 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper container">
     <svg class="page-footer__logo" width="146.3px" height="40.375px">
-      <use xlink:href="img/sprite.svg#pink-logo-footer"></use>
+      <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
     </svg>
     <svg class="page-footer__logo page-footer__logo--desktop" width="146.3px" height="40.375px">
-      <use xlink:href="img/sprite.svg#pink-logo-footer-desktop"></use>
+      <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
     </svg>
 
     <div class="page-footer__social-wrapper">
@@ -433,7 +449,7 @@
       <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg width="26.943px" height="34.09px">
-          <use xlink:href="img/sprite.svg#copyright-html-academy"></use>
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
