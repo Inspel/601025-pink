@@ -188,6 +188,15 @@
     border-radius: 50%;
     cursor: pointer;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
 }
 
 .main-form__input {
