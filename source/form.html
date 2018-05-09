@@ -78,7 +78,7 @@
   <form class="page-content__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
     <div class="container">
       <p class="main-form__instruction">
-        Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
+        Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! <span class="main-form__instruction-desktop">Пожалуйста, заполните форму ниже:</span>
       </p>
     </div>
 
@@ -112,7 +112,7 @@
         <div class="main-form__block-wrapper main-form__block-wrapper--achievments container">
 
           <fieldset class="main-form__fieldset main-form__fieldset--achievments">
-            <legend class="main-form__label">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="main-form__label main-form__label--legend-achievments">Ваши безбашенные достижения в путешествии</legend>
             <ul class="main-form__list main-form__list--achievments">
               <li class="main-form__item main-form__item--achievments">
                 <input class="main-form__checkbox visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
@@ -172,7 +172,7 @@
         <div class="main-form__block-wrapper main-form__block-wrapper--apps">
 
           <fieldset class="main-form__fieldset main-form__fieldset--apps">
-            <legend class="main-form__label">С каким приложением путешествовали?</legend>
+            <legend class="main-form__label main-form__label--legend-apps">С каким приложением путешествовали?</legend>
             <ul class="main-form__list main-form__list--apps">
               <li class="main-form__item main-form__item--apps">
                 <input class="main-form__radio visually-hidden" type="radio" id="ios" checked>
@@ -198,7 +198,7 @@
         <div class="main-form__block-wrapper main-form__block-wrapper--contacts container">
 
           <fieldset class="main-form__fieldset main-form__fieldset--impressions">
-            <legend class="main-form__label main-form__label--impressions">Опишите свои эмоции</legend>
+            <legend class="main-form__label main-form__label--impressions main-form__label--legend-impressions">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="impressions">Опишите свои эмоции</label>
             <textarea class="main-form__input main-form__input--impressions" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
@@ -213,7 +213,7 @@
 
       <div class="main-form__block-wrapper main-form__block-wrapper--submit container">
 
-        <button class="main-form__submit-btn btn-form" type="submit">Отправить форму</button>
+        <button class="main-form__submit-btn btn btn--form" type="submit">Отправить форму</button>
         <p class="main-form__required-legend">
           <span class="main-form__asterisk">*</span> &mdash; обязательные <span class="main-form__required-legend-desktop">для заполнения</span> поля
         </p>
@@ -233,7 +233,7 @@
       </p>
     </div>
       <div class="popup__btn-wrapper">
-        <button class="popup__btn-close btn-form">Закрыть окно</button>
+        <button class="popup__btn-close btn btn--form">Закрыть окно</button>
       </div>
 
   </div>
@@ -247,7 +247,7 @@
       </p>
     </div>
       <div class="popup__btn-wrapper popup__btn-wrapper--error">
-        <button class="popup__btn-close popup__btn-close--error btn-form">ОК</button>
+        <button class="popup__btn-close popup__btn-close--error btn btn--form">ОК</button>
       </div>
   </div>
 

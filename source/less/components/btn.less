@@ -1,0 +1,52 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 14px 0 17px 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 50px;
+
+  &--form {
+    width: 280px;
+    padding: 16px 48px 17px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #2aab6d;
+    border: none;
+    border-radius: 2px;
+
+    &[disabled] {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #e5e5e5;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    &--form {
+      width: 300px;
+      padding: 17px 50px 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn {
+    font-size: 21px;
+    line-height: 18px;
+
+    &--form {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
