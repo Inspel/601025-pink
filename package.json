@@ -4,12 +4,6 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
-    "autoprefixer": "8.3.x",
-    "browser-sync": "2.23.x",
-    "gulp": "3.9.x",
-    "gulp-less": "4.0.x",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "7.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
@@ -42,5 +36,8 @@
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "csso": "^3.5.0"
   }
 }
