@@ -25,25 +25,25 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("style_min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png, jpg, svg}")
+  return gulp.src("source/img/**/*.{jpg,svg,png}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png, jpg}")
+  return gulp.src("source/img/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function() {
@@ -66,7 +66,6 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**"
   ], {
     base: "source"
@@ -81,6 +80,8 @@ gulp.task("clean", function () {
 gulp.task("build", function (done) {
   run(
     "clean",
+    "images",
+    "webp",
     "copy",
     "style",
     "sprite",
