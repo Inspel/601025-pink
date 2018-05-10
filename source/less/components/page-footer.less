@@ -14,24 +14,31 @@
   align-items: center;
 }
 
+.page-footer__link-main {
+  font-size: 0;
+}
+
 .page-footer__logo {
   margin-bottom: 38px;
-  cursor: pointer;
-  color: #283645;
-
-  &:hover,
-  &:focus {
-    color: #d22856;
-  }
 
   &--desktop {
     display: none;
   }
-}
 
-.page-footer__logo:active {
-  color: #283645;
-  opacity: 0.3;
+  &--link {
+    color: #283645;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #283645;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__social-wrapper {

@@ -35,17 +35,20 @@
           <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
         </svg>
 
-        <button class="navigation__nav-btn" type="button" aria-label="Кнопка управления главным меню">
+        <button class="navigation__nav-btn" type="button">
 
           <svg class="navigation__nav-icon navigation__nav-icon--cross" width="23.867px" height="23.867px">
+            <title>Закрыть главное меню</title>
             <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
           </svg>
 
           <svg class="navigation__nav-icon navigation__nav-icon--burger" width="49.945px" height="24.007px">
+            <title>Открыть главное меню</title>
             <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
           </svg>
 
         </button>
+
       </div>
 
     </div>
@@ -174,9 +177,11 @@
 
         <div class="slider__arrows-wrapper">
           <svg class="slider__arrow" width="21.706px" height="41.719px">
+            <title>Влево</title>
             <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
           </svg>
-          <svg class="slider__arrow" width="21.706px" height="41.719px" >
+          <svg class="slider__arrow" width="21.706px" height="41.719px">
+            <title>Вправо</title>
             <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
           </svg>
         </div>
@@ -208,9 +213,9 @@
           </li>
         </ul>
         <div class="slider__toggles-wrapper">
-          <span class="slider__toggle slider__toggle--reviews slider__toggle--active"></span>
-          <span class="slider__toggle slider__toggle--reviews"></span>
-          <span class="slider__toggle slider__toggle--reviews"></span>
+          <span class="slider__toggle slider__toggle--reviews slider__toggle--active" title="Слайд 1"></span>
+          <span class="slider__toggle slider__toggle--reviews" title="Слайд 2"></span>
+          <span class="slider__toggle slider__toggle--reviews" title="Слайд 3"></span>
         </div>
       </div>
 
@@ -310,9 +315,9 @@
           </li>
         </ul>
         <p class="slider__toggles-wrapper tariffs__toggles">
-          <span class="slider__toggle slider__toggle--tariffs"></span>
-          <span class="slider__toggle slider__toggle--tariffs slider__toggle--active"></span>
-          <span class="slider__toggle slider__toggle--tariffs"></span>
+          <span class="slider__toggle slider__toggle--tariffs" title="Слайд 1"></span>
+          <span class="slider__toggle slider__toggle--tariffs slider__toggle--active" title="Слайд 2"></span>
+          <span class="slider__toggle slider__toggle--tariffs" title="Слайд 3"></span>
         </p>
 
       </div>
@@ -385,39 +390,44 @@
     </svg>
 
     <div class="page-footer__social-wrapper">
+
       <ul class="page-footer__social social-block">
         <li class="social-block__item">
-          <a class="social-block__btn social-block__btn--twitter" href="https://twitter.com">
+          <a class="social-block__btn social-block__btn--twitter" href="https://twitter.com" title="Twitter">
             <svg width="17.5px" height="14.663px">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social-block__item">
-          <a class="social-block__btn social-block__btn--facebook" href="https://www.facebook.com">
+          <a class="social-block__btn social-block__btn--facebook" href="https://www.facebook.com" title="Facebook">
             <svg width="8.673px" height="18.944px">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social-block__item">
-          <a class="social-block__btn social-block__btn--youtube" href="https://www.youtube.com">
+          <a class="social-block__btn social-block__btn--youtube" href="https://www.youtube.com" title="Youtube">
             <svg width="14.64px" height="13.96px">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
+
     </div>
+
     <div class="page-footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Html-Academy">
         <svg width="26.943px" height="34.09px">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
+
   </div>
+
 </footer>
 
 <script src="js/navigation.js"></script>
