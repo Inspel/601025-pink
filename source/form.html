@@ -159,11 +159,11 @@
             <ul class="main-form__list main-form__list--contacts">
               <li class="main-form__item main-form__item--contacts main-form__item--phone">
                 <label class="main-form__label main-form__label--contacts-type" for="phone">Номер телефона</label>
-                <input class="main-form__input main-form__input--phone" type="tel" id="phone" value="Номер, пожалуйста">
+                <input class="main-form__input main-form__input--phone" type="tel" id="phone" name="phone" value="Номер, пожалуйста">
               </li>
               <li class="main-form__item main-form__item--contacts main-form__item--email">
                 <label class="main-form__label main-form__label--contacts-type" for="email">Адрес почты</label>
-                <input class="main-form__input main-form__input--email" type="email" id="email" value="Введите почту *" required>
+                <input class="main-form__input main-form__input--email" type="email" id="email" name="email" value="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -180,15 +180,15 @@
             <legend class="main-form__label main-form__label--legend-apps">С каким приложением путешествовали?</legend>
             <ul class="main-form__list main-form__list--apps">
               <li class="main-form__item main-form__item--apps">
-                <input class="main-form__radio visually-hidden" type="radio" id="ios" checked>
+                <input class="main-form__radio visually-hidden" type="radio" id="ios" name="radio-app" checked>
                 <label class="main-form__label main-form__label--radio" for="ios">Pink для iOS</label>
               </li>
               <li class="main-form__item main-form__item--apps">
-                <input class="main-form__radio visually-hidden" type="radio" id="android">
+                <input class="main-form__radio visually-hidden" type="radio" id="android" name="radio-app">
                 <label class="main-form__label main-form__label--radio" for="android">Pink на Android</label>
               </li>
               <li class="main-form__item main-form__item--apps">
-                <input class="main-form__radio visually-hidden" type="radio" id="windows">
+                <input class="main-form__radio visually-hidden" type="radio" id="windows" name="radio-app">
                 <label class="main-form__label main-form__label--radio" for="windows">Windows Phone</label>
               </li>
             </ul>
@@ -205,7 +205,7 @@
           <fieldset class="main-form__fieldset main-form__fieldset--impressions">
             <legend class="main-form__label main-form__label--impressions main-form__label--legend-impressions">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="impressions">Опишите свои эмоции</label>
-            <textarea class="main-form__input main-form__input--impressions" id="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="main-form__input main-form__input--impressions" id="impressions" name="impressions">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
 
         </div>
@@ -230,7 +230,7 @@
   </form>
 
   <!--Попап для отправленной заявки-->
-  <div class="main-form__popup-sent popup visually-hidden">
+  <div class="main-form__popup-sent popup">
     <div class="popup__wrapper">
       <h2 class="popup__header">Ваша заявка отправлена</h2>
       <p class="popup__text">
@@ -244,7 +244,7 @@
   </div>
 
   <!--Попап ошибочного заполнения формы-->
-  <div class="main-form__popup-error popup popup--error visually-hidden">
+  <div class="main-form__popup-error popup popup--error">
     <div class="popup__wrapper">
       <h2 class="popup__header popup__header--error">Что-то пошло не так!</h2>
       <p class="popup__text popup__text--error">
