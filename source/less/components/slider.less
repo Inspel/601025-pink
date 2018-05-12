@@ -85,16 +85,17 @@
   .slider__arrow {
     width: 22px;
     height: 42px;
+    padding: 0;
     background: none;
     border: none;
     fill: #bec2c7;
 
-    &:hover,
-    &:focus {
+    &:hover .slider__arrow-icon,
+    &:focus .slider__arrow-icon {
       fill: #7e868f;
     }
 
-    &:active {
+    &:active .slider__arrow-icon {
       fill: #e9ebec;
     }
   }
