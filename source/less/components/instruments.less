@@ -33,20 +33,20 @@
 .instruments__icon {
   fill: #b5b9be;
 
-  &:hover,
-  &:focus {
+  .instruments__button:hover &,
+  .instruments__button:focus & {
     fill: #8d949b;
   }
 
-  &:active {
+  .instruments__button:active & {
     fill: #d22856;
   }
 
   &--active {
     fill: #d22856;
 
-    &:hover,
-    &:focus {
+    .instruments__button:hover &,
+    .instruments__button:focus & {
       fill: #d22856;
     }
   }
@@ -189,11 +189,6 @@
   .instruments__button {
     width: 48px;
     height: 48px;
-
-    &--fill {
-      padding-left: 2px;
-      padding-top: 2px;
-    }
   }
 
   .instruments__icon {

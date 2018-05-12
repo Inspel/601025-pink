@@ -89,13 +89,15 @@
     background: none;
     border: none;
     fill: #bec2c7;
+  }
 
-    &:hover .slider__arrow-icon,
-    &:focus .slider__arrow-icon {
+  .slider__arrow-icon {
+    .slider__arrow:hover &,
+    .slider__arrow:focus & {
       fill: #7e868f;
     }
 
-    &:active .slider__arrow-icon {
+    .slider__arrow:active & {
       fill: #e9ebec;
     }
   }
