@@ -136,6 +136,24 @@
       width: 24px;
       height: 26px;
     }
+
+    .instruments__button:hover &,
+    .instruments__button:focus & {
+      fill: #d22856;
+    }
+
+    .instruments__button:active & {
+      fill: #d22856;
+    }
+
+    &--active {
+      fill: #d22856;
+
+      .instruments__button:hover &,
+      .instruments__button:focus & {
+        fill: #d22856;
+      }
+    }
   }
 
   .instruments__slider {

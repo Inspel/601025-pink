@@ -234,6 +234,7 @@
   &--impressions {
     padding-right: 20px;
     min-height: 200px;
+    overflow: auto;
   }
 }
 
@@ -478,6 +479,10 @@
     &--impressions {
       width: 501px;
       min-height: 193px;
+    }
+
+    &::-ms-clear {
+      display: none;
     }
   }
 
