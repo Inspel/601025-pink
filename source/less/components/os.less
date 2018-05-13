@@ -6,6 +6,7 @@
 .os__list {
   .reset-list();
   display: flex;
+  width: 280px;
   padding-left: 38px;
   padding-right: 37px;
   margin-bottom: 16px;
@@ -43,10 +44,13 @@
 
 @media (min-width: @tablet-width) {
   .os {
+    width: 300px;
     padding-top: 45px;
   }
 
   .os__list {
+    box-sizing: border-box;
+    width: 300px;
     padding-left: 48px;
     margin-bottom: 31px;
   }
