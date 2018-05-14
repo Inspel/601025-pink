@@ -196,6 +196,7 @@
     display: flex;
     width: 620px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .navigation__top-menu {
@@ -226,8 +227,13 @@
   .navigation__nav-item {
     padding-top: 45px;
     padding-bottom: 43px;
+    padding-right: 79px;
     background-color: transparent;
     border: none;
+
+    &:nth-child(4) {
+      padding-right: 0;
+    }
   }
 
   .navigation__nav-link {
