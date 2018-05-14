@@ -45,13 +45,13 @@
 @media (min-width: @tablet-width) {
   .get-app {
     padding-top: 0;
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: 700px 545px, 1200px auto;
-    background-position: calc(~"100% + 20px") 183px, top center;
+    background-size: 1200px auto;
+    background-position: top center;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
@@ -66,6 +66,14 @@
     flex-direction: column;
     align-items: center;
     background-color: transparent;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: 700px 545px;
+    background-position: bottom center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   .get-app__intro {
@@ -91,18 +99,25 @@
   .get-app {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-size: 1050px 645px, cover;
-    background-position: 25px 208px, 50% 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    background-position: 50% 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-position: 25px 209px, 50% 11px;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-position: 50% 11px;
     }
   }
 
   .get-app__container {
     padding: 218px 661px 122px 20px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-size: 1050px 645px;
+    background-position: 25px 209px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 
   .get-app__slogan {
