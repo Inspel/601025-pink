@@ -40,7 +40,6 @@
         review_count = list_reviews.childElementCount;
       }
     }
-    console.log(review_count);
     width_reviews = window.innerWidth;
     list_reviews.style.left = review_count * width_reviews + "px";
   };
