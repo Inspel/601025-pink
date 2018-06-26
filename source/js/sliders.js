@@ -1,28 +1,36 @@
 "use strict";
 (function () {
 
-  var start_reviews = 0;
-  var width_reviews;
-  var list_reviews = document.querySelector(".slider__list--reviews");
-  var toggles_reviews = document.querySelectorAll(".slider__toggle--reviews");
-
-  var on_toggle_click = function (event) {
-    width_reviews = window.innerWidth;
+  var on_toggle_click = function (event, toggles, contentElements, shift) {
+    toggles.forEach(function (currentValue) {
+      currentValue.classList.remove("slider__toggle--active")
+    });
     var clicked_toggle = event.target;
-    start_reviews = clicked_toggle.getAttribute('index');
-    list_reviews.style.left = -(start_reviews * width_reviews) + "px";
-    for (var i = 0; i < toggles_reviews.length; i++) {
-      toggles_reviews[i].classList.remove("slider__toggle--active");
-    }
-    toggles_reviews[start_reviews].classList.add("slider__toggle--active");
+    clicked_toggle.classList.add("slider__toggle--active");
+
+    var start_reviews = clicked_toggle.getAttribute('index');
+    contentElements.style.left = -(start_reviews * shift) + "px";
   };
 
-  toggles_reviews.forEach(function (currentValue, i) {
-    currentValue.setAttribute("index", i.toString());
-    currentValue.addEventListener("click", function (event) {
-      on_toggle_click(event)
-    })
-  });
+  var activateToggles = function (toggles, contentElements, shift) {
+    toggles.forEach(function (currentValue, index) {
+      currentValue.setAttribute("index", index.toString());
+      currentValue.addEventListener("click", function (event) {
+        on_toggle_click(event, toggles, contentElements, shift)
+      })
+    });
+  };
+
+  var list_reviews = document.querySelector(".slider__list--reviews");
+  var toggles_reviews = document.querySelectorAll(".slider__toggle--reviews");
+  var shift_reviews = window.innerWidth;
+  activateToggles(toggles_reviews, list_reviews, shift_reviews);
+
+  var list_tariffs = document.querySelector(".slider__list--tariffs");
+  var toggles_tariffs = document.querySelectorAll(".slider__toggle--tariffs");
+  var shift_tariffs = 280;
+  activateToggles(toggles_tariffs, list_tariffs, shift_tariffs);
+
 
   var arrows = document.querySelector(".slider__arrows-wrapper");
   var review_count = 0;
@@ -40,37 +48,10 @@
         review_count = list_reviews.childElementCount;
       }
     }
-    width_reviews = window.innerWidth;
-    list_reviews.style.left = review_count * width_reviews + "px";
+    list_reviews.style.left = review_count * shift_reviews + "px";
   };
 
   arrows.addEventListener('click', function (event) {
     on_arrows_click(event);
   });
-})();
-
-(function () {
-  var start_tariffs;
-
-  var width_tariffs = 280;
-
-  var list_tariffs = document.querySelector(".slider__list--tariffs");
-
-  var toggles_tariffs = document.querySelectorAll(".slider__toggle--tariffs");
-
-  var _loop2 = function _loop2(i) {
-    toggles_tariffs[i].onclick = function () {
-
-      start_tariffs = i;
-      list_tariffs.style.left = -(start_tariffs * width_tariffs) + "px";
-      for (var j = 0; j < toggles_tariffs.length; j++) {
-        toggles_tariffs[j].classList.remove("slider__toggle--active");
-      }
-      toggles_tariffs[start_tariffs].classList.add("slider__toggle--active");
-    };
-  };
-
-  for (var i = 0; i < toggles_tariffs.length; i++) {
-    _loop2(i);
-  }
 })();
