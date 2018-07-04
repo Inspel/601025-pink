@@ -44,11 +44,11 @@
       }
     } else if (target && target.parentNode === arrows.lastElementChild) {
       review_count++;
-      if (review_count > list_reviews.childElementCount) {
-        review_count = list_reviews.childElementCount;
+      if (review_count > list_reviews.childElementCount - 1) {
+        review_count = list_reviews.childElementCount - 1;
       }
     }
-    list_reviews.style.left = review_count * shift_reviews + "px";
+    list_reviews.style.left = review_count * shift_reviews * -1 + "px";
   };
 
   arrows.addEventListener('click', function (event) {
